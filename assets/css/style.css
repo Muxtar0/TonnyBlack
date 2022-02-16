@@ -800,3 +800,1812 @@ body,html{
 #Faqs .faq.active .openTextArea{
     display: block;
 }
+/* Account */
+#Account .OptionsCol .content{
+    width: 268px;
+    padding: 5px;
+    position: relative;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+}
+#Account .OptionsCol .content::before{
+    content: " ";
+    top: 66.5px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #F4F4F4;
+}
+#Account .OptionsCol .content > a{
+    display: flex;
+    width: 100%;
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 17px;
+    border-radius: 5px 5px 0 0;
+}
+#Account .OptionsCol .content  a.active{
+    background: #FFF7F7;
+    color: #E10B17;
+}
+#Account .OptionsCol .content  a.active svg path{
+    fill: #E10B17;
+}
+#Account .OptionsCol .content ul{
+    padding: 0;
+}
+#Account .OptionsCol .content li{
+    height: 100%;
+    width: 100%;
+}
+#Account .OptionsCol .content li:nth-child(1){
+    margin-top: 10px;
+}
+#Account .OptionsCol .content li a{
+    display: flex;
+    width: 100%;
+    color: #2B2B2B;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px 24px;
+    border-radius: 5px;
+}
+#Account .OptionsCol .content li a svg{
+    margin-right: 18px;
+    transition: all 300ms;
+}
+#Account .OptionsCol .content li a:hover svg{
+    margin-right: 26px;
+}
+#Account .AccountContent  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 18px;
+}
+#Account .AccountContent  .title h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+#Account .AccountContent .content ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Account .AccountContent .content ul li{
+    width: 48%;
+    height: 152px;
+    border:  1px solid #E0E0E0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#Account .AccountContent .content ul li:nth-child(odd){
+    margin-right:20px;
+}
+
+#Account .AccountContent .content ul li a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 62px;
+    color: #484848;
+    font-size: 22px;
+    font-weight: 400;
+    transition: all 300ms;
+    border-radius: 10px;
+}
+#Account .AccountContent .content ul li a:hover{
+    background: #FFF7F7;
+    color: #E10B17;
+}
+#Account .AccountContent .content ul li a svg{
+    margin-right: 30px;
+    transition: all 300ms;
+}
+#Account .AccountContent .content ul li a svg path{
+    transition: all 300ms;
+}
+#Account .AccountContent .content ul li a:hover svg{
+    margin-right: 25px;
+}
+#Account .AccountContent .content ul li a:hover svg path {
+    fill: #E10B17;
+}
+
+#Account .AcooungSetiingsContent .title h2{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: 400;
+}
+#Account .AcooungSetiingsContent .mainInfos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 24px;
+}
+#Account .AcooungSetiingsContent .mainInfos > input,
+#Account .AcooungSetiingsContent .mainInfos > div{
+    width: 49%;
+    height: 48px;
+    margin-top: 10px;
+}
+#Account .AcooungSetiingsContent .mainInfos div.telephone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+#Account .AcooungSetiingsContent .mainInfos div.telephone input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+
+#Account .select {
+    position: relative;
+  }
+  #Account .select .selectBtn svg{
+      margin-left: 10px;
+  }
+  #Account .select .selectBtn {
+      display: flex;
+      align-items: center;
+    background: var(--bg1);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: #fff;
+  }
+  #Account.select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transition: 0.2s ease;
+  }
+  #Account .select .selectBtn.toggle {
+    border-radius: 3px 3px 0 0;
+  }
+  #Account .select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+  #Account .select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    background: var(--bg1);
+    border-top: 1px solid #eee;
+    z-index: 1;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  #Account .select .selectDropdown .option {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  #Account .select .selectDropdown .option:hover {
+    background: #f8f8f8;
+  }
+  #Account .select .selectDropdown.toggle {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  
+#Account .AcooungSetiingsContent .mainInfos div.telephone select option   {
+    background-image:url(../image/Mask\ Group\ 44.png);   
+}
+#Account .AcooungSetiingsContent .mainInfos input:nth-child(1),
+#Account .AcooungSetiingsContent .mainInfos input:nth-child(3),
+#Account .AcooungSetiingsContent .mainInfos input:nth-child(5){
+    margin-right: 10px;
+}
+#Account .AcooungSetiingsContent .mainInfos input{
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AcooungSetiingsContent .mainInfos input::placeholder{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AcooungSetiingsContent .mainInfos .birthydayDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+#Account .AcooungSetiingsContent .mainInfos .birthydayDiv div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#Account .AcooungSetiingsContent .mainInfos .birthydayDiv p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #757575;
+}
+#Account .AcooungSetiingsContent .mainInfos .birthydayDiv select{
+    padding: 15px;
+    outline: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 48px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #757575;
+    margin: 0 5px;
+}
+#Account .AcooungSetiingsContent .OtherInfos .KurumsalDiv{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: #FAFAFA;
+    padding: 16px;
+
+    margin: 32px 0;
+}
+
+/* The container */
+.CustomCheckbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #2B2B2B;
+    font-size: 14px;
+    font-weight: 400;
+  }
+/* Hide the browser's default checkbox */
+#Account .AcooungSetiingsContent .OtherInfos .KurumsalDiv .CustomCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+#Account .AcooungSetiingsContent .OtherInfos .KurumsalDiv   .checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #eee;
+    border-radius: 5px;
+
+  }
+  
+  /* On mouse-over, add a grey background color */
+#Account .AcooungSetiingsContent .OtherInfos .KurumsalDiv   .CustomCheckbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  #Account .AcooungSetiingsContent .OtherInfos .KurumsalDiv   .CustomCheckbox input:checked ~ .checkmark {
+    background-color: #E10B17;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  #Account .AcooungSetiingsContent .OtherInfos .KurumsalDiv   .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  #Account .AcooungSetiingsContent .OtherInfos .KurumsalDiv  .CustomCheckbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+#Account .AcooungSetiingsContent .OtherInfos .KurumsalDiv   .CustomCheckbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+#Account .AcooungSetiingsContent .OtherInfos .inputs{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+#Account .AcooungSetiingsContent .OtherInfos .inputs > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+#Account .AcooungSetiingsContent .OtherInfos .inputs > div input,
+#Account .AcooungSetiingsContent .OtherInfos .inputs > div select    {
+    width: 49%;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AcooungSetiingsContent .OtherInfos .inputs input,
+#Account .AcooungSetiingsContent .OtherInfos .inputs select,
+#Account .AcooungSetiingsContent .OtherInfos .inputs textarea
+{
+    margin: 5px 0;
+    width: 100%;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+
+}
+#Account .AcooungSetiingsContent .OtherInfos .inputs > div input::placeholder,
+#Account .AcooungSetiingsContent .OtherInfos .inputs > div select::placeholder{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AcooungSetiingsContent .OtherInfos .inputs input::placeholder,
+#Account .AcooungSetiingsContent .OtherInfos .inputs select::placeholder,
+#Account .AcooungSetiingsContent .OtherInfos .inputs textarea::placeholder{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AcooungSetiingsContent .OtherInfos .inputs select,
+#Account .AcooungSetiingsContent .OtherInfos .inputs select{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AcooungSetiingsContent .OtherInfos button{
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 516px;
+    height: 48px;
+    background: #2B2B2B;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    transition: all 300ms;
+}
+#Account .AcooungSetiingsContent .OtherInfos button:hover{
+    background: #E10B17;
+}
+#Account .MyAdressInfosContent .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Account .MyAdressInfosContent .title h2{
+    color: #2B2B2B;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+#Account .MyAdressInfosContent .title a{
+    border: none;
+    outline: none;
+    width: 175px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #E10B17;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content{
+    padding: 10px;
+    border: 2px solid #EFEFEF;
+    border-radius: 12px;
+    margin-top: 26px;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content.active {
+    border-color: #E10B17;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E5E5E5;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .top .left{
+    display: flex;
+    align-items: center;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .top .left p{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 7px;
+
+}
+
+
+
+
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .top .right a{
+    font-size: 16px;
+    color: #E10B17;
+    text-decoration: underline !important;
+    margin-right: 10px;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .top .right button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .bottom{
+    padding-top: 12px;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .bottom h3{
+    font-size: 14px;
+    font-weight: medium;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #2B2B2B;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .bottom p{
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: medium;
+    color: #767676;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .bottom .phone{
+    display: flex;
+    align-items: center;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6 .content .bottom .phone p{
+    margin: 0;
+    margin-left: 9px;
+    font-size: 14px;
+    font-weight: medium;
+    color: #2B2B2B;
+}
+
+#Account .MyAdressInfosContent .adresses .col-lg-6.addNewAdressCol .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 177px;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6.addNewAdressCol .content p{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: medium;
+}
+#Account .MyAdressInfosContent .adresses .col-lg-6.addNewAdressCol .content button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+#Account .AddNewAdressContent .title h2{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+#Account .AddNewAdressContent .OtherInfos .KurumsalDiv{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: #FAFAFA;
+    padding: 16px;
+
+    margin: 32px 0;
+}
+
+
+#Account .AddNewAdressContent .OtherInfos .inputs{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+#Account .AddNewAdressContent .OtherInfos .inputs > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+#Account .AddNewAdressContent .OtherInfos .inputs > div input,
+#Account .AddNewAdressContent .OtherInfos .inputs > div select    {
+    width: 49%;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AddNewAdressContent .OtherInfos .inputs input,
+#Account .AddNewAdressContent .OtherInfos .inputs select,
+#Account .AddNewAdressContent .OtherInfos .inputs textarea
+{
+    margin: 5px 0;
+    width: 100%;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+
+}
+#Account .AddNewAdressContent .OtherInfos .inputs > div input::placeholder,
+#Account .AddNewAdressContent .OtherInfos .inputs > div select::placeholder{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AddNewAdressContent .OtherInfos .inputs input::placeholder,
+#Account .AddNewAdressContent .OtherInfos .inputs select::placeholder,
+#Account .AddNewAdressContent .OtherInfos .inputs textarea::placeholder{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AddNewAdressContent .OtherInfos .inputs select,
+#Account .AddNewAdressContent .OtherInfos .inputs select{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .AddNewAdressContent .OtherInfos button{
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 516px;
+    height: 48px;
+    background: #2B2B2B;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    transition: all 300ms;
+}
+#Account .AddNewAdressContent .OtherInfos button:hover{
+    background: #E10B17;
+}
+
+#Account .AddNewAdressContent .OtherInfos div.telephone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    width: 49%;
+    font-size: 14px;
+    font-weight: 400;
+}
+#Account .AddNewAdressContent .OtherInfos div.telephone input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0;
+}
+
+#Account .select {
+    position: relative;
+  }
+  #Account .select .selectBtn svg{
+      margin-left: 10px;
+  }
+  #Account .select .selectBtn {
+      display: flex;
+      align-items: center;
+    background: var(--bg1);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: #fff;
+  }
+  #Account.select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transition: 0.2s ease;
+  }
+  #Account .select .selectBtn.toggle {
+    border-radius: 3px 3px 0 0;
+  }
+  #Account .select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+  #Account .select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    background: var(--bg1);
+    border-top: 1px solid #eee;
+    z-index: 1;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  #Account .select .selectDropdown .option {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  #Account .select .selectDropdown .option:hover {
+    background: #f8f8f8;
+  }
+  #Account .select .selectDropdown.toggle {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  
+  #Account .AddNewAdressContent .OtherInfos div.telephone select option   {
+    background-image:url(../image/Mask\ Group\ 44.png);   
+}
+
+
+
+
+
+#Account .BeforeOrdersContent .title h2{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: 400;
+}
+#Account .BeforeOrdersContent .content .Card{
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    padding: 17px;
+    margin: 6.5px 0;
+}
+#Account .BeforeOrdersContent .content .Card ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+#Account .BeforeOrdersContent .content .Card ul li h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #848484;
+    margin-bottom: 7.5px;
+}
+#Account .BeforeOrdersContent .content .Card ul li p{
+    margin: 0;
+    color: #2B2B2B;
+    font-size: 14px;
+    font-weight: 400;
+}
+#Account .BeforeOrdersContent .content .Card ul li p.price{
+    color: #E10B17;
+}
+#Account .BeforeOrdersContent .content .Card ul li button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 157px;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+#Account .BeforeOrdersContent .content .Card ul li button svg{
+    margin-right: 7.5px;
+}
+#Account .BeforeOrdersContent .content .Card ul li button.deleteOrder{
+    background: #FFF3EE;
+    color: #E10B17;
+}
+
+
+
+
+
+#Account .FavoritesContent .title h2{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: 400;
+}
+#Account .FavoritesContent .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Account .FavoritesContent .Card{
+    width: 32%;
+    margin-top: 20px;
+}
+#Account .FavoritesContent .Card .ImageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #F8F8F8;
+    border-radius: 9px;
+    height: 413px;
+
+}
+#Account .FavoritesContent .Card .LikeIconBTN{
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+#Account .FavoritesContent .Card .color{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#Account .FavoritesContent .Card .color p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #202020;
+    margin: 0;
+}
+
+#Account .FavoritesContent .Card .Infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 34px 24px;
+}
+#Account .FavoritesContent .Card .Infos h3{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #202020;
+    text-align: center;
+    margin-bottom: 14px;
+}
+#Account .FavoritesContent .Card .Infos > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Account .FavoritesContent .Card .Infos > div .discountPercent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px 10px;
+    border: 1px solid #202020;
+    border-radius: 4px;
+    margin-right: 17px;
+}
+#Account .FavoritesContent .Card .Infos > div .discountPercent p{
+    margin: 0;
+    font-size: 19px;
+    font-weight: 400;
+    color: #202020;
+}
+#Account .FavoritesContent .Card .Infos > div .discountPercent span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #202020;
+}
+#Account .FavoritesContent .Card .Infos > div .discountPrice p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    position: relative;
+}
+#Account .FavoritesContent .Card .Infos > div .discountPrice p::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 100%;
+    background: #999999;
+    z-index: 1000;
+}
+#Account .FavoritesContent .Card .Infos > div .discountPrice span{
+    font-size: 18px;
+    font-weight: 400;
+    color: #202020;
+    text-align: center;
+}
+
+
+/* Blog Info */
+
+#BlogInfo .title h4{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    color: #484848;
+    margin-bottom: 23px;
+}
+#BlogInfo .title h2{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 35px;
+}
+#BlogInfo img{
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+#BlogInfo p{
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+#BlogInfo .ReadCommentDiv{
+    width: 100%;
+}
+#BlogInfo .ReadCommentDiv h3{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 15px;
+}
+#BlogInfo .ReadCommentDiv div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+}
+#BlogInfo .ReadCommentDiv textarea{
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 18px;
+    border-bottom: 1px solid #DEDEDE;
+}
+#BlogInfo .ReadCommentDiv button{
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    width: 138px;
+    height: 42px;
+    background: #E10B17;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+
+}
+#BlogInfo .comments{
+    margin-top: 17px;
+}
+#BlogInfo .comments .comment{
+    width: 100%;
+    background: #FAFAFA;
+    border-radius: 5px;
+    padding: 18px;
+    margin: 5.5px 0;
+}
+#BlogInfo .comments .comment p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+#BlogInfo .comments .comment span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #BCBCBC;
+    margin-top: 6px;
+}
+
+/* Questions */
+#Questions .TitleCol h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #484848;
+    text-align: center;
+}
+#Questions .MainContentCol{
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    padding: 55px;
+    margin-top: 28px;
+}
+#Questions .MainContentDiv .leftCol ul{
+    padding: 0;
+    margin: 0;
+}
+#Questions .MainContentDiv .leftCol ul li:nth-child(1){
+    margin-top: 0;
+}
+#Questions .MainContentDiv .leftCol ul li{
+    margin: 12px 0;
+}
+#Questions .MainContentDiv .leftCol ul li button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #585858;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Questions .MainContentDiv .leftCol ul li button.active{
+    color: #E10B17;
+}
+#Questions .MainContentDiv .leftCol ul li button span{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #E0E0E0;
+    margin-right: 16px;
+}
+#Questions .MainContentDiv .leftCol ul li button.active span{
+    border: none;
+    background: #E10B17;
+}
+#Questions .MainContentDiv .leftCol ul li button span svg{
+    margin: auto;
+}
+#Questions .MainContentDiv .leftCol ul li button.active span svg path{
+    fill: white;
+}
+#Questions .MainContentDiv .tab-content{
+    display: none;
+}
+#Questions .MainContentDiv .tab-content.active{
+    display: block;
+}
+#Questions .MainContentDiv .tab-content h3{
+    margin: 0;
+    font-weight: 400;
+    font-size: 28px;
+    color: #484848;
+    margin-bottom: 22px;
+}
+#Questions .MainContentDiv .tab-content p {
+    margin: 22px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+
+/* Contact */
+#Contact .bgIMG{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100vh;
+}
+#Contact .bgIMG img{
+    width: 100%;
+    height: 100%;
+}
+#Contact .ContactCol h2{
+    margin: 0;
+    padding: 0;
+    font-size: 33px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 33px;
+}
+#Contact .ContactCol ul {
+    margin: 0;
+    padding: 0;
+} 
+#Contact .ContactCol ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+#Contact .ContactCol ul li p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #E10B17;
+    display: flex;
+    align-items: center;
+}
+#Contact .ContactCol ul li p svg{
+        margin-right: 13px;
+}
+#Contact .ContactCol ul li span{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2B2B2B;
+    text-align: start;
+    width: 50%;
+}
+
+#Contact .ContactCol .contentInputs{
+    border-top: 1px solid #BCBCBC;
+    padding-top: 34px;
+    margin-top: 34px;
+}
+
+#Contact .ContactCol .contentInputs h2{
+    margin-bottom: 20px;
+}
+#Contact .ContactCol input,
+#Contact .ContactCol textarea
+{
+    margin: 5px 0;
+    width: 100%;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+}
+#Contact .ContactCol input::placeholder,
+#Contact .ContactCol textarea::placeholder{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+}
+#Contact .ContactCol button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    background: #2B2B2B;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+#Contact .ContactCol div.telephone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+#Contact .ContactCol div.telephone input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+
+#Contact .ContactCol .select {
+    position: relative;
+  }
+  #Contact .ContactCol .select .selectBtn svg{
+      margin-left: 10px;
+      visibility: hidden;
+
+  }
+
+  #Contact .ContactCol .select .selectBtn {
+      display: flex;
+      align-items: center;
+    background: var(--bg1);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: #fff;
+  }
+  #Contact .ContactCol .select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transition: 0.2s ease;
+  }
+  #Contact .ContactCol .select .selectBtn.toggle {
+    border-radius: 3px 3px 0 0;
+  }
+  #Contact .ContactCol .select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+  #Contact .ContactCol .select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    background: var(--bg1);
+    border-top: 1px solid #eee;
+    z-index: 1;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  #Contact .ContactCol .select .selectDropdown .option {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  #Contact .ContactCol .select .selectDropdown .option:hover {
+    background: #f8f8f8;
+  }
+  #Contact .ContactCol .select .selectDropdown.toggle {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  
+  #Contact .ContactCol div.telephone select option   {
+    background-image:url(../image/Mask\ Group\ 44.png);   
+}
+#Contact  .MapCol{
+    margin-top: 30px;
+}
+#Contact  .MapCol .content iframe{
+    width: 100%;
+    height: 400px;
+}
+
+
+
+/* Reconiliation */
+#Reconiliation .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../image/toptan-satilacak-urunu-belirlemek.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 590px;
+    position: relative;
+}
+#Reconiliation .banner img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+#Reconiliation .banner h2{
+    margin: 0;
+    padding: 0;
+    font-size: 62px;
+    font-weight: 400;
+    color: #FFFFFF;
+    z-index: 100;
+}
+#Reconiliation .banner h3{
+    margin: 0;
+    padding: 0;
+    margin-top: 29px;
+    font-size: 29px;
+    font-weight: 400;
+    color: #FFFFFF;
+    z-index: 100;
+}
+#Reconiliation .Advantages h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    color: #2B2B2B;
+    margin-bottom: 32px;
+}
+#Reconiliation .Advantages .advantage{
+    width: 100%;
+    padding: 30px;
+    background: #FAFAFA;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    margin: 11.5px 0;
+}
+#Reconiliation .Advantages .advantage p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+}
+#Reconiliation .contactForm .content{
+    background: #FAFAFA;
+    padding: 30px 50px;
+    border-radius: 24px;
+}
+#Reconiliation .contactForm h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    color: #2B2B2B;
+    margin-bottom: 32px;
+}
+#Reconiliation .contactForm button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    background: #2B2B2B;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+#Reconiliation .contactForm input{
+    margin: 5px 0;
+    width: 100%;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+}
+#Reconiliation .contactForm div.telephone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+#Reconiliation .contactForm div.telephone input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+
+#Reconiliation .contactForm .select {
+    position: relative;
+  }
+  #Reconiliation .contactForm .select .selectBtn svg{
+      margin-left: 10px;
+      visibility: hidden;
+
+  }
+
+  #Reconiliation .contactForm .select .selectBtn {
+      display: flex;
+      align-items: center;
+    background: var(--bg1);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: #fff;
+  }
+  #Reconiliation .contactForm .select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transition: 0.2s ease;
+  }
+  #Reconiliation .contactForm .select .selectBtn.toggle {
+    border-radius: 3px 3px 0 0;
+  }
+  #Reconiliation .contactForm .select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+  #Reconiliation .contactForm .select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    background: var(--bg1);
+    border-top: 1px solid #eee;
+    z-index: 1;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  #Reconiliation .contactForm .select .selectDropdown .option {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  #Reconiliation .contactForm .select .selectDropdown .option:hover {
+    background: #f8f8f8;
+  }
+  #Reconiliation .contactForm .select .selectDropdown.toggle {
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  
+  #Reconiliation .contactForm div.telephone select option   {
+    background-image:url(../image/Mask\ Group\ 44.png);   
+}
+
+#ContactSection.ReconiliationSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+    padding: 100px 20px;
+    margin-top: 50px;
+}
+#ContactSection.ReconiliationSec .content h2{
+    text-align: center;
+    font-size: 41px;
+    font-weight: bold;
+    color: #2B2B2B;
+    margin-bottom: 52px;
+}
+#ContactSection.ReconiliationSec .content .Cards{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#ContactSection.ReconiliationSec .content .Cards .Card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #EDEDED;
+    border-radius:10px;
+    margin: 0 16px;
+    padding: 40px;
+}
+#ContactSection.ReconiliationSec .content .Cards .Card h5{
+    font-size: 38px;
+    font-weight: 400;
+    color: #E10B17;
+    margin: 13px 0 19px 0;
+}
+#ContactSection.ReconiliationSec .content .Cards .Card p{
+    font-size: 30px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+
+/* OrderCancel */
+#OrderCancel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#OrderCancel .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#OrderCancel .content h2{
+    margin: 0;
+    color: #2B2B2B;
+    font-size: 24px;
+    font-weight: bold;
+}
+#OrderCancel .content svg{
+    margin: 40px 0 60px 0;
+}
+#OrderCancel .content > p{
+    margin: 0;
+    color: #2B2B2B;
+    font-size: 16px;
+    font-weight: 400;
+}
+#OrderCancel .content textarea{
+    margin: 18px 0;
+    width: 474px;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+}
+#OrderCancel .content  button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 474px;
+    height: 48px;
+    border-radius: 5px;
+    background: #2B2B2B;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+#OrderCancel .content .CodeDiv{
+    width: 474px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    border: 1px solid #EBEBEB;
+    margin-top: 13px;
+}
+#OrderCancel .content .CodeDiv p{
+    margin: 0;
+    color: #2B2B2B;
+    font-size: 20px;
+    font-weight: 400;
+}
+#OrderCancel .content .CodeDiv span{
+    margin: 0;
+    color: #E10B17;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* Sign In */
+#Account .SignInContent .MainTitle h2{
+    color: #2B2B2B;
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+
+}
+#Account .SignInContent .MainTitle{
+    border-bottom: 1px solid #F4F4F4;
+    padding-bottom: 16px;
+}
+#Account .SignInContent  h2{
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+
+
+
+#Account .SignInContent .OtherInfos .inputs{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+#Account .SignInContent .OtherInfos .inputs > div{
+    width: 100%;
+    margin-top: 37px;
+
+}
+
+#Account .SignInContent .OtherInfos .inputs > div > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+#Account .SignInContent .OtherInfos .inputs > div > div input,
+#Account .SignInContent .OtherInfos .inputs > div > div select    {
+    width: 49%;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .SignInContent .OtherInfos .inputs input,
+#Account .SignInContent .OtherInfos .inputs select,
+#Account .SignInContent .OtherInfos .inputs textarea
+{
+    margin: 5px 0;
+    width: 100%;
+    background: white;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 16px;
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+
+}
+#Account .SignInContent .OtherInfos .inputs > div > div input::placeholder,
+#Account .SignInContent .OtherInfos .inputs > div > div select::placeholder{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .SignInContent .OtherInfos .inputs input::placeholder,
+#Account .SignInContent .OtherInfos .inputs select::placeholder,
+#Account .SignInContent .OtherInfos .inputs textarea::placeholder{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .SignInContent .OtherInfos .inputs select,
+#Account .SignInContent .OtherInfos .inputs select{
+    color: #757575;
+    font-size:14px;
+    font-weight: 400;
+}
+#Account .SignInContent .OtherInfos button{
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 516px;
+    height: 48px;
+    background: #2B2B2B;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    transition: all 300ms;
+}
+#Account .SignInContent .OtherInfos button:hover{
+    background: #E10B17;
+}
+
+#Account .SignInContent .OtherInfos div.telephone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    width: 49%;
+    font-size: 14px;
+    font-weight: 400;
+}
+#Account .SignInContent .OtherInfos button{
+    margin: 35px auto;
+}
+#Account .SignInContent .OtherInfos .telephone input{
+    width: 100% !important;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    margin: 0 !important;
+}
+#Account .SignInContent .birthydayDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    width: 49%;
+}
+#Account .SignInContent .birthydayDiv div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#Account .SignInContent .birthydayDiv p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #757575;
+}
+#Account .SignInContent .birthydayDiv select{
+    padding: 15px;
+    outline: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 48px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #757575;
+    margin: 0px 5px !important;
+}
