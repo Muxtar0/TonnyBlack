@@ -2136,6 +2136,9 @@ body,html{
     height: 590px;
     position: relative;
 }
+#Reconiliation  .MainCon{
+    margin-top: 40px;
+}
 #Reconiliation .banner img{
     position: absolute;
     bottom: 0;
@@ -2608,4 +2611,406 @@ body,html{
     font-weight: 400;
     color: #757575;
     margin: 0px 5px !important;
+}
+
+/*  Blogs  */
+#Blogs .main .BlogCard:not(:nth-child(1)){
+    margin-top: 20px;
+}
+#Blogs .main .BlogCard .imgDiv{
+    height: 285px;
+    width: 100%;
+}
+#Blogs .main .BlogCard .imgDiv img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+#Blogs .main .BlogCard .textDiv{
+    padding: 35px;
+    border: 1px solid #EFEFF1;
+    border-radius: 10px;
+    transform: translateY(-5px);
+    background: white;
+}
+#Blogs .main .BlogCard .textDiv h3{
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #212529;
+}
+#Blogs .main .BlogCard .textDiv p{
+    margin: 16px 0 ;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+}
+#Blogs .main .BlogCard .textDiv button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    width: 163px;
+    height: 46px;
+    border-radius: 5px;
+    background: #E10B17;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+
+#Blogs .aside .socialMedias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#Blogs .aside > div:nth-child(1){
+    border: 1px solid #EFEFF1;
+    border-radius: 10px;
+    padding: 25px 15px;
+}
+#Blogs .aside .socialMedias .socialCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    margin: 13px 0;
+}
+#Blogs .aside .socialMedias .socialCard .iconDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53.21px;
+    height: 53.21px;
+    border-radius: 6px;
+    border: 1px solid #EFEFF1;
+    margin-right: 13px;
+}
+#Blogs .aside .socialMedias .socialCard div p:nth-child(1){
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #484848;
+}
+#Blogs .aside .socialMedias .socialCard div p:nth-child(2){
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #484848;
+    margin-top: 1px;
+}
+
+#Blogs .aside  .NewProducts .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 21px 0;
+}
+#Blogs .aside  .NewProducts .buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    width: 129px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+#Blogs .aside  .NewProducts .buttons button:nth-child(1){
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    margin-right: 20px;
+}
+#Blogs .aside  .NewProducts .buttons button:nth-child(2){
+    background-color:#000000;
+    color: white;
+}
+#Blogs .aside  .NewProducts .Card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 11.5px 0;
+}
+#Blogs .aside  .NewProducts .Card img{
+    width: 91px;
+    height: 91px;
+    border-radius: 10px;
+    margin-right: 18px;
+}
+#Blogs .aside  .NewProducts .Card p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529;
+}
+#Blogs .aside .categories{
+    margin-top: 43px;
+}
+#Blogs .aside .categories h3{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #2B2B2B;
+    text-align: center;
+    margin-bottom: 13px;
+}
+#Blogs .aside .categories div{
+    border: 1px solid #EFEFF1;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Blogs .aside .categories div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 49px;
+    border: 1px solid #EBEBEB;
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529;
+    margin: 6.5px 0;
+}
+#Blogs .aside .categories div a:nth-child(1),
+#Blogs .aside .categories div a:last-child{
+    margin-top: 0;
+}
+
+
+/* Medias */
+@media (max-width:992px){
+    #Account .OptionsCol{
+        display: none;
+    }
+    #Account .AcooungSetiingsContent .title h2{
+        text-align: center;
+    }
+    #Account .AddNewAdressContent .title h2{
+        text-align: center;
+    }
+    #Account .BeforeOrdersContent .title h2{
+        text-align: center;
+    }
+    #BlogInfo img{
+        height: 370px;
+    }
+    #Blogs .aside .socialMedias .socialCard{
+        width: auto;
+    }
+    #Blogs .aside > div:nth-child(1){
+        border: none;
+    }
+    #Blogs .aside .socialMedias{
+        border-bottom: 1px solid #EBEBEB;
+        padding-bottom: 20px;
+    }
+    #Blogs .aside .NewProducts .Products{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #Blogs .aside .NewProducts .Products .Card{
+        width: 48%;
+    }
+    #Blogs .aside .categories div{
+        border: none;
+        border-bottom:1px solid #EFEFF1 ;
+    }
+    #Blogs .aside .categories div a{
+        width: 46%;
+    }
+    #Blogs .aside .categories div{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #Blogs .aside .categories div a{
+        margin: 6.5px;
+    }
+    #Contact .bgIMG{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    #Contact .bgIMG img{
+        object-fit: cover;
+    }
+    #Contact .ContactCol h2{
+        text-align: center;
+    }
+    #Contact .ContactCol{
+        margin-top: 30px;
+    }
+    #Contact .ContactCol .contentInputs h2{
+        text-align: center;
+    }
+    #Account .FavoritesContent .Card .ImageDiv img{
+        width: 80%;
+    }
+    .OrderSummaryCol .content{
+        margin-top: 40px;
+
+    }
+    .OrderSummaryCol .OrderCard{
+        width: 100%;
+        max-width: 100%;
+    }
+    .OrderSummaryCol .Conditions{
+        width: 100%;
+        max-width: 100%;
+    }
+    #Questions .MainContentDiv .leftCol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #Reconiliation .contactForm{
+        margin-top: 40px;
+    }
+}
+@media (max-width:600px){
+    #Account .AcooungSetiingsContent .mainInfos > input, #Account .AcooungSetiingsContent .mainInfos > div{
+        width: 98%;
+    }
+    #Account .AcooungSetiingsContent .OtherInfos button{
+        width: 98%;
+    }
+    #Account .AddNewAdressContent .OtherInfos .inputs > div input, #Account .AddNewAdressContent .OtherInfos .inputs > div select{
+        width: 98%;
+    }
+    #Account .AddNewAdressContent .OtherInfos div.telephone{
+        width: 98%;
+    }
+    #Account .AddNewAdressContent .OtherInfos button{
+        width: 98%;
+    }
+    #Artboard .RemittanceInformation .CreditCard{
+        width: 98%;
+        padding: 15px 19px;
+    }
+    #Artboard .RemittanceInformation .CreditCard .infosDiv{
+        flex-direction: column;
+        padding: 15px 21px;
+    }
+    #Artboard .RemittanceInformation .top p{
+        width: 98%;
+        text-align: center;
+    }
+    #Artboard .RemittanceInformation{
+        width: 100%;
+    }
+    #Artboard .RemittanceInformation .CreditCard{
+        height: 100%;
+    }
+    #Artboard .RemittanceInformation .CreditCard .infosDiv div p{
+        margin-top: 10px;
+    }
+    #Account .BeforeOrdersContent .content .Card ul{
+        flex-wrap: wrap;
+    }
+    #Account .BeforeOrdersContent .content .Card ul li button{
+        margin-top:15px;
+        width: 149px;
+    }
+    #Account .BeforeOrdersContent .content .Card ul li:nth-child(2){
+        margin: 0 12px;
+    }
+    #Account .BeforeOrdersContent .content .Card ul li:nth-child(3){
+        width: 100%;
+        margin-top: 10px;
+    }
+    #BlogInfo img{
+        height: 270px;
+    }
+    #Blogs .main .BlogCard .textDiv{
+        padding: 21px;
+    }
+    #Blogs .aside .NewProducts .Products .Card{
+        width: 100%;
+        margin: 5px 0;
+    }
+    #Blogs .aside .categories div{
+        padding: 7px;
+    }
+    #Contact .bgIMG{
+        height: 300px;
+    }
+    #Account .FavoritesContent .content{
+        flex-wrap: wrap;
+    }
+    #Account .FavoritesContent .Card{
+        width: 98%;
+    }
+    #Account .FavoritesContent .title h2{
+        text-align: center;
+    }
+    #FollowOrder .content .emailArea{
+        width: 98%;
+        padding: 20px;
+    }
+    #ForgotPassword  .content .emailArea{
+        width: 98%;
+        padding: 20px;
+    }
+    #Account .AccountContent .content ul li{
+        width: 98%;
+    }
+    #OrderCancel .content > p{
+        text-align: center;
+    }
+    #OrderCancel .content button,
+    #OrderCancel .content .CodeDiv,
+    #OrderCancel .content textarea{
+        width: 98%;
+    }
+    #OrderCancel .content .CodeDiv p{
+        font-size: 14px;
+    }
+    #OrderCancel .content .CodeDiv span{
+        font-size: 16px;
+    }
+    #Account .SignInContent .OtherInfos .inputs > div > div input, #Account .SignInContent .OtherInfos .inputs > div > div select{
+        width: 98%;
+    }
+    #Account .SignInContent .birthydayDiv{
+        width: 98%;
+    }
+    #Account .SignInContent .OtherInfos div.telephone{
+        width: 98%;
+    }
+    #Account .SignInContent .OtherInfos button{
+        width: 98%;
+    }
+    #Account .SignInContent h2{
+        text-align: center;
+    }
+    #Reconiliation .contactForm .content{
+        padding: 15px 25px;
+    }
+    #ContactSection.ReconiliationSec .content .Cards{
+        flex-direction: column;
+    }
+    #Reconiliation .banner h2{
+        text-align: center;
+    }
+    #Reconiliation .banner h3{
+        text-align: center;
+    }
 }
