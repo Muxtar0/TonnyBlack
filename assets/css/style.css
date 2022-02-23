@@ -38,19 +38,30 @@ body,html{
     border-radius: 0 6px 6px 0;
 }
 .DeliveryInformationCol .content .buttons a{
-    background: #E0E0E0;
-    border: 1px solid #E0E0E0;
-    color: #2B2B2B;
+border: 1px solid var(--unnamed-color-e0e0e0);
+background: #FAFAFA 0% 0% no-repeat padding-box;
+border: 1px solid #E0E0E0;
+border-radius: 0px 6px 6px 0px;
+color: #2B2B2B;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
 }
 .DeliveryInformationCol .content .buttons a.active{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
     background: transparent;
     border:1px solid  #F5F5F5;
     color: #E10B17;
 }
 .DeliveryInformationCol .adresses .AdressTitleCol h3{
-    font-size: 22px;
-    font-weight: medium;
     margin-top: 30px;
+   
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 22px/27px var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-2b2b2b);
+    text-align: left;
+    font: normal normal medium 22px/27px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #2B2B2B;
+    opacity: 1;
 }
 .DeliveryInformationCol .adresses .col-lg-6 .content{
     padding: 10px;
@@ -60,6 +71,50 @@ body,html{
 }
 .DeliveryInformationCol .adresses .col-lg-6 .content.active {
     border-color: #E10B17;
+}
+
+.info-bt{
+    margin-top: 38px;
+     padding-top: 38px;
+    border-top: 1px solid #EFEFEF ;
+}
+
+.info-bt p{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 22px/27px var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-2b2b2b);
+text-align: left;
+font: normal normal medium 22px/27px Helvetica Neue;
+letter-spacing: 0px;
+color: #2B2B2B;
+opacity: 1;
+}
+
+.info-bt .info-col {
+    display: flex;
+    align-items: flex-end;
+}
+
+.info-bt .info-col input{
+    margin-right: 8px;
+}
+
+.info-bt .info-col input:checked {
+    accent-color:  #E10B17;
+}
+
+
+
+
+.info-bt .info-col span{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/16px var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-2b2b2b);
+text-align: left;
+font: normal normal normal 14px/16px Helvetica Neue;
+letter-spacing: 0px;
+color: #2B2B2B;
+opacity: 1;
 }
 .DeliveryInformationCol .adresses .col-lg-6 .content .top{
     display: flex;
@@ -96,19 +151,25 @@ body,html{
     border-radius: 50%;
 }
 .DeliveryInformationCol .adresses .col-lg-6 .content .top .left .radio__radio::before{
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    content: "";
+    margin: 3px;
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background:#E10B17 ;
+    background:#E10B17;
     display: none;
 }
+.DeliveryInformationCol .adresses .col-lg-6 .content .top .left .radio__radio.red::before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background:#E10B17;
+    display: none;
+
+}
 .DeliveryInformationCol .adresses .col-lg-6 .content .top .left input:checked + .radio__radio::before{
-    display: inline-block;
+    display: flex;
 }
 .DeliveryInformationCol .adresses .col-lg-6 .content .top .left input:checked + .radio__radio{
     border-color: #E10B17;
@@ -182,7 +243,6 @@ body,html{
     max-width: 363px;
     padding: 29px;
     background: white;
-    box-shadow: 0px 1px 6px #000000;
     border-radius: 9px;
 }
 .OrderSummaryCol .OrderCard .top{
@@ -224,8 +284,15 @@ body,html{
 .OrderSummaryCol .OrderCard .total .totalinfo p{
     margin: 0;
     font-size: 14px;
-    font-weight:normal;
     color: #E10B17;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-e10b17);
+text-align: left;
+font: normal normal bold 14px/17px Helvetica Neue;
+letter-spacing: 0px;
+color: #E10B17;
+opacity: 1;
 }
 .OrderSummaryCol .OrderCard .total .totalinfo p span{
     margin-right: 25px;
@@ -244,7 +311,9 @@ body,html{
     width: 30px;
     height: 30px;
     margin-right: 13px;
+    accent-color:#E10B17;
 }
+
 .OrderSummaryCol .Conditions p{
     margin: 0;
     font-size: 14px;
@@ -543,6 +612,7 @@ body,html{
     font-size: 18px;
     font-weight: 300;
     padding-left: 33px;
+    
 }
 .PaymentMetodCol .content .buttons a:nth-child(1){
     border-radius: 6px 0 0 6px;
@@ -554,6 +624,7 @@ body,html{
     background: #E0E0E0;
     border: 1px solid #E0E0E0;
     color: #2B2B2B;
+    
 }
 .PaymentMetodCol .content .buttons a.active{
     background: transparent;
@@ -650,7 +721,7 @@ body,html{
     max-width: 363px;
     padding: 29px;
     background: white;
-    box-shadow: 0px 1px 6px #000000;
+    box-shadow: 0px 1px 6px #00000029;
     border-radius: 9px;
 }
 .OrderSummaryCol .OrderCard .top{
@@ -701,7 +772,7 @@ body,html{
 .OrderSummaryCol .Conditions {
     max-width: 363px;
     background: white;
-    box-shadow: 0px 1px 6px #000000;
+    box-shadow: 0px 1px 6px #00000029;
     border-radius: 9px;
     display: flex;
     align-items: center;
@@ -713,6 +784,11 @@ body,html{
     height: 30px;
     margin-right: 13px;
 }
+
+.OrderSummaryCol .Conditions input:checked + .Conditions{
+border: 2px solid red;
+}
+
 .OrderSummaryCol .Conditions p{
     margin: 0;
     font-size: 14px;
@@ -722,6 +798,7 @@ body,html{
 .OrderSummaryCol .Conditions p a{
     text-decoration: underline !important;
     color: #2B2B2B;
+    
 }
 .OrderSummaryCol .accept{
     margin-top: 16px;
@@ -730,7 +807,7 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 363px;
     height: 46px;
     border-radius: 5px;
     background: #2B2B2B;
@@ -2886,6 +2963,9 @@ body,html{
     }
 }
 @media (max-width:600px){
+    .OrderSummaryCol .accept a{
+        width: 100%;
+    }
     #Account .AcooungSetiingsContent .mainInfos > input, #Account .AcooungSetiingsContent .mainInfos > div{
         width: 98%;
     }

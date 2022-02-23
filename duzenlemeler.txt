@@ -1,0 +1,118 @@
+Frontend Eksikler
+
+13-SatinAlSonrasiAdresSayfasi.html
+
+1) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png
+- Fatura bilgileriniz bölümü yok. Bu işaretli olmadığında altında üstteki gibi bölüm açılacak. +
+- Sağ taraftaki border shadowlar aynı değil. +
+- Sağ taraftaki sipariş özeti ile buton hizalı değil. +
+- ön bilgilendirme checkbox seçildiğinde fatura bilgilerimdeki gibi renkde olacak 
+- fontlar tasarımdaki ile aynı değil. +
+- bgler, font renkleri, font boldlukları aynı değil. Ödeme sekliniz bölümünün bg sine bakabilirsiniz. Fontlarının kalınlıklarıan bakabilirsiniz +
+- kayıt adresim seçildiğinde ortadaki yuvarlak tam centered değil +
+- kaydet ve devam et butonunun hoverı durumu yok. +
+- notlarda "13. sayfada 'Yeni Adres Ekle' dendiğinde popup açılıp içerisinde form inputları olacak." yazmıştım sanırım bu da gözden kaçmış.
+
+2) Tablet ve Mobil tasarıma hiç bakılmamış sanırım. https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png
+- Üstte başlıkların heightleri küçülüyor
+- yeni adres ekle bölümü üste gelip heighi böyle oluyor
+- sipariş özeti bölümü kapanıp açılabilir oluyor. tıklandığında o taraf komple kapanacak sadece sipariş özeti yazacak ve ok ters dönecek. (Bu bölüm mutlaka kapanıp açılırken animasyonlu açılıp kapanması gerekiyor. Direk display none, block şeklinde değil.)
+- https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png mobilde fixed en altta bir bar çıkıyor.
+- Siparşi özetinin kapalı hali burada var.
+
+14-PaymentMetod.html
+
+1) Aynı üstte bahsettiğim, shadow, başlık, font, font weight, button, seçili durumda yuvarlık ortalı olması, buton, shadowlar, sepetin tablet + mobilde açılıp kapanabilir olması, butonun hoveri gibi durumlar geçerli
+
+2) Ek olarak havale ile ödemeye tıklandığında sepetteki gibi direk açılması yerine ufak bir animasyon uygulayıp aşağı doğru açılıp yukarı doğru kapansa daha iyi olacaktır.
+
+19-ArtBoard1.html
+
+1) kopyala butonunun tıklandığında mutlaka kopyalandı yazması gerekiyor. bunu direk sayfaya basmak yerine img lerin üstüne gelindiğinde çıkan bir şey oluyor o şekilde gösterilebilir
+2) Burada sipariş kodu bölümü centered
+3) butonun hoverı yok
+4) fontlara yine bakılmamış muhtemelen heryere roboto yapıştırılmış fakat tasarımda her yer roboto değil.
+5) mobil + tablet font sizelarına bakılması gerekiyor. 
+
+20-ArtBoard2.html
+1) fontların hepsine bakılması gerekiyor.
+2) butonun hoverı yok
+3) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png bu arada boşluk var
+4) banka ikonu çözünürlük olarak düşük kalmış.
+5) kopyala butonuna basıldığında yine kopyalandı yazması gerekiyor bir yerde.
+6) mobil + tablet font sizelarına bakılması gerekiyor. kaymalar yaşanmış halbuki mobil tasarıam bakarsanız hiç bir alt satıra taşma yok
+
+21-MyAccount.html
+1) Bu sayfada yazılar ve butonlar tasarımdaki ile aynı olsun lütfen.
+2) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png  https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png
+m
+bazı çözünürlükte taşma var, bazısındaki ikonlar gidiyor, mobilde butonların widthlerinde problem var. Mobil tasarımda bu butonların heightleri bu kadar değil. 
+3) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png tablette ve mobilde burası unutulmuş
+
+22-AccountSettings.html
+1) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png yine şurada üste taşıyor.
+2) sol taraftaki ikonlar 
+3) kurumsala tıklandığında alt taraf gelecek animasyonlu bir şekilde yukardan aşağı. Tıklanmadığında kapanacak
+4) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png sol da sağda eşitsizlikler var her input kendi kafasına göre margin vermiş.
+5) 21 sayfada bahsettiğim gibi yukarıdaki başlık ve geri bölümü yok.
+
+23-MyAdressInfos.html
+1) mobil+tablet en üstteki başlık, geri bölümü
+2) yeni adres ekle butonunun konumu mobile+tablet
+3) butona tıklandığında açılacak form açılmıyor. Tasarımı web 24. sayfada var
+
+25-AddNewAdress.html
+1) yukarıda bahsettiklerimin hepsi bu sayfa içinde geçerli
+2) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png  telefon bölümü mask edilmeli yani cep telefonu formatında girilmeli ve daha fazla numara girilmeli. Maskdan kastım (544) 444 44444 şeklinde vs. Selectlerde ok çok sağa yapışık
+Bu bahsettiklerim yani cep telefonu ve select diğer sayfalar içinde geçerli
+
+
+26-BeforeOrders.html
+1) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png webdeki aradaki boşluk tasarımdaki ile aynı değil
+2) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png tablet görüntüsü aynı değil
+3) mobil görüntüsü aynı değil
+4) yine fontlarda üstte olduğu gibi kontorl edilsin
+
+xd web 27. sayfa tasarlanmamış.
+
+28-Favorites.html
+1) fontlar kontrol edilmeli
+2) fiyatın üstündeki ----- tasarımdaki gibi olsun
+3) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png tablet görüntüsü kaymalar var
+4) mobile görüntüsü tasarım ile aynı değil
+5) tablet ve mobilde olan sepette %10 indirim yazısı webde de olabilir. mobile tablete özel değil o yazı
+
+29-SignIn.html
+1) önceki sayfalarda bahsettiğim sorunlar aynı. font, inputların kayması, telefon mask, vs.
+
+30-OrderCancel.html
+1) aynı sorunlar hocam tasarım ile birebir olsun lütfen.
+2) görseldeki bulutlar yok.
+3) buton hover, textler, fontlar vs.
+4) mobilde, tablette görselin büyüklüğü, fontların büyüklükleri vs kontrol edilsin farklılıklar var
+
+31-WholesaleReconciliation.html 
+32-ForgotPassword.html
+33-FollowOrder.html
+1) aynı sorunlar. buton hover vs.
+2) mobile+tablet font büyüklükleri, ikon büyüklükleri vs. ufak tasarım farklılıkları
+
+34-Contact.html
+1) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png görsel ile sol bölüm arasındaki boşluk yok, firma adı gibi bölümlerin ikonları yok, buton hover, telefon mask vs. harita bölümü hatalı tasarımdaki gibi olsun
+2) yine tablet, mobil kontrol edilmesi gerekiyor. Görsel tablette çok büyük geliyor. Fontlar çok büyük
+
+35-Questions.html
+1) tablet ve mobil tasarımı kontrol edilsin lütfen. menü bölümü farklı, muhtemelen font sizelarıda farklı
+
+36-Faq.html
+1) açık olan soruya tekrar tıklandığında kapanması gerekiyor. Açılış direk display none gibi değil daha animasyonlu olsun lütfen.
+2) mobile, tablet tarafları için tasarıma bakılsın, marginler, font sizeler vs hatalı
+
+37-Blogs.html
+1) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png burası tab olacak. En yenilere tıklandığında alt taraf değişecek
+2) sağ taraftaki kategorilerin ve detaya git butonlarının hover durumları yok
+3) tablet + mobil tasarıma bakılsın lütfen
+4) https://image.prntscr.com/image/ajXgmN4qS72U0hmfclQdCA.png tasarımda olan bu bölüm yok
+
+38-BlogInfo.html
+1) tablet + mobil tasarım bakılsın lütfen yazı fontları konumlandırılmaları vs her şey birebir aynı olsun
