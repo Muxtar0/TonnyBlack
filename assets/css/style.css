@@ -346,6 +346,7 @@ opacity: 1;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 #Artboard .col-12 .content h3{
     margin: 17px 0 25px 0;
@@ -445,6 +446,37 @@ opacity: 1;
     border-radius: 8px;
     padding: 25px 31px;
     margin-top: 21px;
+}
+
+.copy-text{
+    opacity: 0;
+    transition: 300ms all;
+    left: 56%;
+    top:85%;
+    position: absolute;
+    background: #000;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius:15px;
+}
+
+.copy-text.active{
+    opacity: 1;
+}
+
+.copy-text .ox{
+    width: 20px;
+    height: 20px;
+    background:#000;
+    position: absolute;
+    top: -25%;
+    left: 20%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.copy-text p{
+    margin: 0;
+    padding: 0 ;
 }
 
 #Artboard .RemittanceInformation .CreditCard .infosDiv div p{
@@ -686,7 +718,7 @@ opacity: 1;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-54%,-46%);
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -703,10 +735,19 @@ opacity: 1;
 
 .PaymentMetodCol .paymentMetod .col-lg-12 .content .bottom{
     padding-top: 12px;
-    display: none;
+    visibility: hidden;
+    opacity: 0 !important;
+    transition: 400ms all;
+    height: 0;
+    margin-top: -20px;
+    padding-bottom: 10px;
+
 }
 .PaymentMetodCol .paymentMetod .col-lg-12 .content .bottom.active{
-    display: block;
+    visibility: visible;
+    opacity: 1 !important;
+    height: auto;
+    margin-top: 0px;
 }
 .PaymentMetodCol .paymentMetod .col-lg-12 .content .bottom p {
     margin: 0;

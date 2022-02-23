@@ -50,6 +50,10 @@
                         <button class="ContinueShopping">
                             Alışverişe Devam Et
                         </button>  
+                        <div class="copy-text">
+                            <div class="ox"></div>
+                            <p> Kopyalandı ! </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,7 +62,8 @@
     <!-- Artboar end -->
 
     <script>
-        const copyOrderCodeBTN = document.querySelector(".CopyOrderCode")
+        const copyOrderCodeBTN = document.querySelector(".CopyOrderCode");
+          const textShow = document.querySelector('.copy-text');
 
         copyOrderCodeBTN.addEventListener('click', function(event) {
             var copyText = document.querySelector('#CopyedOrderCode');
@@ -67,7 +72,12 @@
             copyText.setSelectionRange(0, 99999); /* For mobile devices */
             /* Copy the text inside the text field */
             navigator.clipboard.writeText(copyText.value);
+            textShow.classList.toggle('active');
+            setTimeout(function(){
+                textShow.classList.remove('active');
+            },1500)
         });
+
     </script>
 </body>
 </html>
