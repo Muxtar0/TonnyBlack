@@ -45,7 +45,10 @@
                                     <path id="Path_3542" data-name="Path 3542" d="M750.407,192.563a2.309,2.309,0,0,1,1.813-2.3,10.184,10.184,0,0,1,1.457-.058c.158,0,.316,0,.494,0,0-.1,0-.169,0-.24a2.352,2.352,0,0,1,2.345-2.5q4.225,0,8.449,0a2.434,2.434,0,0,1,.594.067,2.388,2.388,0,0,1,1.753,2.451c0,3.3,0,.475,0,3.775,0,1.506.009,3.013-.006,4.519a2.3,2.3,0,0,1-1.817,2.294,12.558,12.558,0,0,1-1.677.06c-.084,0-.168,0-.27,0,0,.139,0,.246,0,.352a2.39,2.39,0,0,1-1.375,2.188,4.506,4.506,0,0,1-.626.207h-9.133l-.25-.067a2.4,2.4,0,0,1-1.756-2.452m1.449-7.142q0,3.551,0,7.1c0,.62.316.982.878.983q4.245.006,8.49,0a.8.8,0,0,0,.825-.607,1.789,1.789,0,0,0,.046-.446c0-4.685,0-3.245,0-7.931,0-.722-.309-1.055-.978-1.055h-8.27c-.685,0-.993.328-.993,1.06C751.851,195.162,751.851,191.376,751.851,193.715Zm11.693,5.328a.366.366,0,0,0,.068.022q.641,0,1.281,0c.655,0,.969-.338.969-1.043,0-4.692,0-3.26,0-7.952,0-.721-.3-1.046-.981-1.046h-4.165c-1.4,0-2.79,0-4.185,0a.859.859,0,0,0-.913.929c-.009.2.054.25.235.249,1.769-.007,3.538-.01,5.306,0a2.627,2.627,0,0,1,.845.13,2.4,2.4,0,0,1,1.539,2.387c0,4.054,0,1.983,0,6.036Z" transform="translate(-750.402 -187.458)" fill="#a0a0a0"/>
                                   </svg>
                             </button>
-                              
+                            <div class="copy-text2">
+                                <div class="ox2"></div>
+                                <p> Kopyalandı ! </p>
+                            </div>
                         </div>  
 
                         <div class="RemittanceInformation">
@@ -87,7 +90,11 @@
                                         <p>IBAN : <input type="text" value="TR995 9898 74777 4444 8898 4444 444" disabled id="CopyedIBAN"></p>
                                         <p>HESAP ADI : TONNY BLACK </p>
                                     </div>   
-                                    <button class="CopyIBAN">Kopyala</button>                                   
+                                    <button class="CopyIBAN">Kopyala</button>   
+                                    <div class="copy-text3">
+                                        <div class="ox3"></div>
+                                        <p> Kopyalandı ! </p>
+                                    </div>                                
                                 </div>
                             </div>
                         </div>
@@ -103,7 +110,10 @@
 
     <script>
         const copyOrderCodeBTN = document.querySelector(".CopyOrderCode")
-        const CopyIBANBTN = document.querySelector(".CopyIBAN")
+        const CopyIBANBTN = document.querySelector(".CopyIBAN");
+        const copytext2 = document.querySelector('.copy-text2');
+        const copytext3 = document.querySelector('.copy-text3');
+        
 
         copyOrderCodeBTN.addEventListener('click', function(event) {
             var copyText = document.querySelector('#CopyedOrderCode');
@@ -112,6 +122,11 @@
             copyText.setSelectionRange(0, 99999); /* For mobile devices */
             /* Copy the text inside the text field */
             navigator.clipboard.writeText(copyText.value);
+            copytext2.classList.add('active')
+            setTimeout(function(){
+            copytext2.classList.remove('active')
+            },1500)
+              
         });
         CopyIBANBTN.addEventListener('click', function(event) {
             var copyText = document.querySelector('#CopyedIBAN');
@@ -120,6 +135,10 @@
             copyText.setSelectionRange(0, 99999); /* For mobile devices */
             /* Copy the text inside the text field */
             navigator.clipboard.writeText(copyText.value);
+            copytext3.classList.add('active')
+            setTimeout(function(){
+            copytext3.classList.remove('active')
+            },1500)
         });
     </script>
 </body>

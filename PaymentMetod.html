@@ -87,7 +87,50 @@
                             </div>
                         </div>
                         <div class="col-lg-4 OrderSummaryCol">
-                            <div class="content">
+                            <div class="content disop">
+                                <div class="OrderCard">
+                                    <div class="top opMod top2">
+                                        <h3>Sipariş Özeti</h3>
+                                        <img class="rot" src="./assets/image/Path 3952.png" alt="">
+                                    </div>
+                                    <div class="anim">
+                                    <div class="infos">
+                                        <div class="info">
+                                            <p>Toplam (KDV Hariç)</p>
+                                            <p><span>:</span> 51.85 TL</p>
+                                        </div>
+                                        <div class="info">
+                                            <p>KDV</p>
+                                            <p><span>:</span> 51.85 TL</p>
+                                        </div>
+                                        <div class="info">
+                                            <p>Toplam (KDV Dahil)</p>
+                                            <p><span>:</span> 51.85 TL</p>
+                                        </div>
+                                        <div class="info">
+                                            <p>Sepette %40 İndirim</p>
+                                            <p><span>:</span> 51.85 TL</p>
+                                        </div>
+                                    </div>
+                                    <div class="total">
+                                        <div class="totalinfo">
+                                            <p>Toplam ( TL )</p>
+                                            <p><span>:</span> 33.60 TL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="Conditions">
+                                    <input type="checkbox">
+                                    <p><a href="#">Ön Bilgilendirme Koşulları’nı</a> ve <a href="#">Mesafeli Satış Sözleşmesi’ni</a> okudum, onaylıyorum</p>
+                                </div>
+                                <div class="accept">
+                                    <a href="#">
+                                        Kaydet ve Devam Et
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content dis">
                                 <div class="OrderCard">
                                     <div class="top">
                                         <h3>Sipariş Özeti</h3>
@@ -150,6 +193,16 @@
             }
         })
         }
+
+      const opMod = document.querySelector('.opMod');  
+      const anim = document.querySelector('.anim');
+      const imageRotate = document.querySelector('.rot');
+
+      opMod.addEventListener('click', function(){
+          anim.classList.toggle('active')
+          opMod.classList.toggle('active')
+          imageRotate.classList.toggle('active')
+      })
     </script>
 </body>
 </html>

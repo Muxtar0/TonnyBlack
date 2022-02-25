@@ -20,11 +20,11 @@
                 <div class="col-lg-6">
                     <div class="content">
                         <h2>Size nasıl yardımcı olabiliriz?</h2>
-                        <h5>Sıkça sorulan sorularımıza
+                        <h5>Sıkça sorulan sorularımıza <br>
                             gözatabilirsiniz.</h5>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 ord">
                     <img src="assets/image/Group 6942.jpg" alt="">
                 </div>
             </div>
@@ -185,10 +185,10 @@
         for (let i = 0; i < FaqBTN.length; i++) {
             FaqBTN[i].addEventListener('click' , (e) => {
                 for (let i = 0; i < FaqBTN.length; i++) {
-                    FaqBTN[i].parentElement.classList.remove('active')
                     FaqBTN[i].querySelector('button span').innerHTML = "+"
+                  
                 }
-                FaqBTN[i].parentElement.classList.add('active')
+                FaqBTN[i].parentElement.classList.toggle('active')
                 FaqBTN[i].querySelector('button span').innerHTML = "-"
             })
         }

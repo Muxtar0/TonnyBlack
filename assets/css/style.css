@@ -8,10 +8,10 @@
     list-style: none;
     text-decoration: none !important;
     font-family: 'Roboto', sans-serif;
+    resize:none !important;
 }
 body,html{
     width: 100%;
-    overflow-x: hidden;
     padding: 30px 0;
 }
 /* Global Style */
@@ -30,6 +30,7 @@ body,html{
     font-size: 18px;
     font-weight: 300;
     padding-left: 33px;
+
 }
 .DeliveryInformationCol .content .buttons a:nth-child(1){
     border-radius: 6px 0 0 6px;
@@ -43,22 +44,23 @@ background: #FAFAFA 0% 0% no-repeat padding-box;
 border: 1px solid #E0E0E0;
 border-radius: 0px 6px 6px 0px;
 color: #2B2B2B;
-font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+font-weight:400 ;
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
 }
 .DeliveryInformationCol .content .buttons a.active{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
     background: transparent;
     border:1px solid  #F5F5F5;
     color: #E10B17;
+    font-weight: medium;
 }
 .DeliveryInformationCol .adresses .AdressTitleCol h3{
     margin-top: 30px;
-   
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 22px/27px var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 22px/27px var(--unnamed-font-family-helvetica-neue);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-2b2b2b);
     text-align: left;
-    font: normal normal medium 22px/27px Helvetica Neue;
+    font-size: 22px;
     letter-spacing: 0px;
     color: #2B2B2B;
     opacity: 1;
@@ -80,19 +82,21 @@ font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 
 }
 
 .info-bt p{
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 22px/27px var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 22px/27px var(--unnamed-font-family-helvetica-neue);
 letter-spacing: var(--unnamed-character-spacing-0);
 color: var(--unnamed-color-2b2b2b);
 text-align: left;
-font: normal normal medium 22px/27px Helvetica Neue;
 letter-spacing: 0px;
 color: #2B2B2B;
 opacity: 1;
+color: #2B2B2B;
+font-size: 22px;
+font-weight: 500;
 }
 
 .info-bt .info-col {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .info-bt .info-col input{
@@ -103,18 +107,15 @@ opacity: 1;
     accent-color:  #E10B17;
 }
 
-
-
-
 .info-bt .info-col span{
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/16px var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/16px var(--unnamed-font-family-helvetica-neue);
 letter-spacing: var(--unnamed-character-spacing-0);
 color: var(--unnamed-color-2b2b2b);
 text-align: left;
-font: normal normal normal 14px/16px Helvetica Neue;
 letter-spacing: 0px;
 color: #2B2B2B;
 opacity: 1;
+font-size: 14px;
 }
 .DeliveryInformationCol .adresses .col-lg-6 .content .top{
     display: flex;
@@ -245,9 +246,46 @@ opacity: 1;
     background: white;
     border-radius: 9px;
 }
-.OrderSummaryCol .OrderCard .top{
-    padding-bottom: 25px;
-    border-bottom: 1px solid #EDEDED;
+
+.OrderCard .top{
+    padding-bottom: 25px !important;
+    border-bottom: 1px solid #EDEDED !important;
+}
+.OrderCard .top2{
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+}
+.OrderCard .top.active{
+    padding-bottom: 25px !important;
+    border-bottom: 1px solid #EDEDED !important;
+}
+
+.content2{
+    display: none;
+}
+
+.rot{
+    transition: 400ms ease;
+}
+.rot.active{
+    transform: rotate(180deg);
+}
+
+.anim{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+}
+
+.disop{
+display: none !important;
+}
+
+.anim.active{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    transition: 400ms ease-in ;
 }
 .OrderSummaryCol .OrderCard .top h3{
     margin: 0;
@@ -285,14 +323,13 @@ opacity: 1;
     margin: 0;
     font-size: 14px;
     color: #E10B17;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-helvetica-neue);
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-helvetica-neue);
 letter-spacing: var(--unnamed-character-spacing-0);
 color: var(--unnamed-color-e10b17);
 text-align: left;
-font: normal normal bold 14px/17px Helvetica Neue;
 letter-spacing: 0px;
-color: #E10B17;
 opacity: 1;
+font-weight: bold !important;
 }
 .OrderSummaryCol .OrderCard .total .totalinfo p span{
     margin-right: 25px;
@@ -352,6 +389,8 @@ opacity: 1;
     margin: 17px 0 25px 0;
     font-size: 49px;
     font-weight: 500;
+    letter-spacing: 2.21px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 49px/60px var(--unnamed-font-family-helvetica-neue);
     color: #3A3A3A;
 }
 #Artboard .col-12 .content > p{
@@ -360,34 +399,45 @@ opacity: 1;
     max-width: 344px;
     font-size: 16px;
     font-weight: normal;
+    font-weight: normal;
     color: #3A3A3A;
     text-align: center;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/22px var(--unnamed-font-family-helvetica-neue)
 }
 #Artboard .col-12 .content .copyOrderCode{
     width: 323px;
     height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     border:  1px solid #F2F2F2;
     border-radius: 5px;
+    position: relative;
 }
 #Artboard .col-12 .content .copyOrderCode p{
     margin: 0;
+    text-align: center;
+     height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     font-size: 17px;
-    font-weight: normal;
+    font-weight: 500;
     color: #404040;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-17)/21px var(--unnamed-font-family-roboto);
 }
 #Artboard .col-12 .content .copyOrderCode p input{
-    background-color: transparent;
-    border: none;
-    outline: none;
+margin-left: 5px;
+width: 30%;
+border: none;
+background: transparent;
+font-size: 17px;
+    font-weight: 500;
+    color: #404040;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-17)/21px var(--unnamed-font-family-roboto);
 }
 #Artboard .col-12 .content .copyOrderCode button{
     position: absolute;
-    transform: translateX(-50%);
-    right: 10px;
+    top: 45%;
+    transform: translateY(-50%);
+    right: 20px;
     background: transparent;
     border: none;
     outline: none;
@@ -405,7 +455,8 @@ opacity: 1;
     color: white;
     margin-top: 22px;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-17)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-roboto);
 }
 #Artboard .RemittanceInformation{
     display: flex;
@@ -431,6 +482,8 @@ opacity: 1;
     font-size: 16px;
     font-weight: 400;
     color: #2B2B2B;
+    margin-bottom: 51px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-helvetica-neue);
 }
 #Artboard .RemittanceInformation .CreditCard{
     width: 652px;
@@ -460,6 +513,71 @@ opacity: 1;
     border-radius:15px;
 }
 
+.copy-text2{
+    opacity: 0;
+    transition: 300ms all;
+    left: 56%;
+    top:100%;
+    position: absolute;
+    background: #000;
+    padding: 10px 20px;
+    height: 40px;
+    border-radius:15px;
+}
+
+.copy-text2 p{
+    height: auto !important;
+}
+
+.copy-text3{
+    opacity: 0;
+  position: absolute;
+    transition: 300ms all;
+    left: 56%;
+    top:79%;
+    position: absolute;
+    background: #000;
+    padding: 10px 20px;
+    border-radius:15px;
+}
+
+.copy-text3.active{
+    opacity: 1;
+}
+.copy-text3 p{
+    color:#fff !important;
+    margin: 0 !important;
+}
+
+.copy-text2 p{
+    font-size: 15px !important;
+    color:#fff !important;
+}
+
+.copy-text3 .ox3{
+    width: 20px;
+    height: 20px;
+    background:#000;
+    position: absolute;
+    top: -25%;
+    left: 20%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.copy-text2 .ox2{
+    width: 20px;
+    height: 20px;
+    background:#000;
+    position: absolute;
+    top: -25%;
+    left: 20%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.copy-text2.active{
+    opacity: 1;
+}
+
 .copy-text.active{
     opacity: 1;
 }
@@ -474,21 +592,160 @@ opacity: 1;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
+.Popup {
+    position: fixed;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    visibility: hidden;
+    opacity: 0; 
+    margin-top: -10px;
+    transition: 300ms all;
+}
+
+.noneBlock{
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms all;
+    margin-top: -30px;
+}
+
+.noneBlock.active{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+}
+
+.Popup.active{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.Popup .popup-container{
+    width: 615px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+border-radius: 24px;
+opacity: 1;
+
+}
+.Popup .popup-container{
+    padding-bottom: 52px;
+    position: relative;
+}
+.Popup .popup-container .pop-title{
+    padding-top: 45px;
+    text-align: center;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 24px/var(--unnamed-line-spacing-20) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-2b2b2b);
+font-size: 24px;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+.Popup .popup-container form{
+    display: flex;
+    width: 492px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.Popup .popup-container form textarea{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EEEEEE;
+border-radius: 5px;
+margin-top: 10px;
+margin-bottom: 14px;
+opacity: 1;
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-12) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-2b2b2b);
+font-size: 14px;
+letter-spacing: 0px;
+color: #2B2B2B;
+opacity: 1;
+height: 130px;
+padding-left: 16px;
+padding-top: 15px;
+}
+
+.Popup .popup-container form .pop-btn{
+    background: var(--unnamed-color-2b2b2b) 0% 0% no-repeat padding-box;
+background: #2B2B2B 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+height: 48px;
+border: none;
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-12) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+text-align: center;
+font-size: 16px;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.Popup .popup-container form input, select{
+    padding: 16px 0;
+    padding-left: 16px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EEEEEE;
+border-radius: 5px;
+opacity: 1;
+margin-bottom: 10px;
+}
+
+.Popup .popup-container form input::placeholder{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-12) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-2b2b2b);
+text-align: left;
+font-size: 14px;
+letter-spacing: 0px;
+opacity: 1;
+}
+
+.Popup .popup-container form #phone{
+    width: 100%;
+    padding-left: 50px;
+}
+
+.Popup .popup-container form #phone::placeholder{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-12) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-2b2b2b);
+text-align: left;
+font-size: 14px;
+letter-spacing: 0px;
+color: #2B2B2B;
+}
+.Popup .close-Btn{
+    position: absolute;
+    top:0;
+    right:-100px;
+    cursor: pointer;
+}
+.Popup .close-Btn:hover{
+    transform: scale(1.1);
+}
 .copy-text p{
     margin: 0;
     padding: 0 ;
 }
 
-#Artboard .RemittanceInformation .CreditCard .infosDiv div p{
-    font-size: 14px;
-    width: 100%;
-
-}
 #Artboard .RemittanceInformation .CreditCard .infosDiv div p input{
     background: transparent;
     border: none;
     outline: none;
-    width: 280px;
+    width: 286px;
 }
 #Artboard .RemittanceInformation .CreditCard .infosDiv button{
     border: none;
@@ -516,7 +773,8 @@ opacity: 1;
     margin: 6px 0 20px 0;
     color: #2B2B2B;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 22px/27px var(--unnamed-font-family-helvetica-neue);
 }
 #ForgotPassword .content > p{
     margin: 0;
@@ -526,6 +784,7 @@ opacity: 1;
     color: #7B7B7B;
     max-width: 367px;
     text-align: center;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-roboto);
 
 }
 #ForgotPassword .content .emailArea{
@@ -540,7 +799,7 @@ opacity: 1;
 #ForgotPassword .content .emailArea p{
     margin: 0;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     color: #2B2B2B;
 }
 #ForgotPassword .content .emailArea input{
@@ -565,7 +824,7 @@ opacity: 1;
     background: #E10B17;
     color: white;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 400;
 }
 /* FollowOrder */
 #FollowOrder .content{
@@ -579,7 +838,8 @@ opacity: 1;
     margin: 6px 0 20px 0;
     color: #2B2B2B;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 22px/27px var(--unnamed-font-family-helvetica-neue);
 }
 #FollowOrder .content > p{
     margin: 0;
@@ -589,6 +849,7 @@ opacity: 1;
     color: #7B7B7B;
     max-width: 367px;
     text-align: center;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-roboto);
 }
 #FollowOrder .content .emailArea{
     width: 533px;
@@ -602,8 +863,11 @@ opacity: 1;
 #FollowOrder .content .emailArea p{
     margin: 0;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     color: #2B2B2B;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-roboto);
+
+    
 }
 #FollowOrder .content .emailArea input{
     width: 100%;
@@ -653,15 +917,20 @@ opacity: 1;
     border-radius: 0 6px 6px 0;
 }
 .PaymentMetodCol .content .buttons a{
-    background: #E0E0E0;
-    border: 1px solid #E0E0E0;
-    color: #2B2B2B;
+    border: 1px solid var(--unnamed-color-e0e0e0);
+background: #FAFAFA 0% 0% no-repeat padding-box;
+    font-weight: 400;
+    color: #666666;
+    font-size: 18px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
     
 }
 .PaymentMetodCol .content .buttons a.active{
     background: transparent;
     border:1px solid  #F5F5F5;
     color: #E10B17;
+    font-weight: 500;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
 }
 .PaymentMetodCol .paymentMetod .PaymentTitleCol h3{
     font-size: 22px;
@@ -765,10 +1034,7 @@ opacity: 1;
     box-shadow: 0px 1px 6px #00000029;
     border-radius: 9px;
 }
-.OrderSummaryCol .OrderCard .top{
-    padding-bottom: 25px;
-    border-bottom: 1px solid #EDEDED;
-}
+
 .OrderSummaryCol .OrderCard .top h3{
     margin: 0;
     padding: 0;
@@ -830,6 +1096,14 @@ opacity: 1;
 border: 2px solid red;
 }
 
+.OrderCard .top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.OrderCard .top img{
+    object-fit: contain;
+}
 .OrderSummaryCol .Conditions p{
     margin: 0;
     font-size: 14px;
@@ -870,21 +1144,24 @@ border: 2px solid red;
 #FaqBanner .content h2{
     color: #000000;
     font-size: 42px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 24px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 42px/51px var(--unnamed-font-family-helvetica-neue);
 }
 #FaqBanner .content h5{
     color: #000000;
+    line-height: 35px;
     font-size: 27px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 24px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 27px/40px var(--unnamed-font-family-helvetica-neue);
 }
 #Faqs .col-lg-6{
     margin-top: 79px;
 }
 #Faqs .title h5{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000;
     margin-bottom:14px;
 
@@ -913,10 +1190,19 @@ border: 2px solid red;
     margin-right: 15px;
 }
 #Faqs .faq .openTextArea{
-    display: none;
+     visibility: hidden;
+     height: 0;
+     opacity: 0;
+     transition: 500ms all;
+     
 }
+
 #Faqs .faq.active .openTextArea{
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    transform: translateX(-15px);
+
 }
 /* Account */
 #Account .OptionsCol .content{
@@ -940,9 +1226,10 @@ border: 2px solid red;
     width: 100%;
     color: #2B2B2B;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 15px 17px;
     border-radius: 5px 5px 0 0;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
 }
 #Account .OptionsCol .content  a.active{
     background: #FFF7F7;
@@ -989,6 +1276,7 @@ border: 2px solid red;
     font-size: 18px;
     font-weight: 400;
     color: #2B2B2B;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/22px var(--unna);
 }
 #Account .AccountContent .content ul{
     margin: 0;
@@ -1494,9 +1782,10 @@ border: 2px solid red;
 
 
 #Account .AddNewAdressContent .title h2{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
     color: #2B2B2B;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 
@@ -1699,13 +1988,14 @@ border: 2px solid red;
 #Account .BeforeOrdersContent .title h2{
     color: #2B2B2B;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
 }
 #Account .BeforeOrdersContent .content .Card{
     border: 1px solid #F5F5F5;
     border-radius: 10px;
     padding: 17px;
-    margin: 6.5px 0;
+    margin:13px;
 }
 #Account .BeforeOrdersContent .content .Card ul{
     padding: 0;
@@ -1716,9 +2006,11 @@ border: 2px solid red;
 }
 #Account .BeforeOrdersContent .content .Card ul li h5{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 5
+    00;
     color: #848484;
     margin-bottom: 7.5px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-helvetica-neue);
 }
 #Account .BeforeOrdersContent .content .Card ul li p{
     margin: 0;
@@ -1739,7 +2031,8 @@ border: 2px solid red;
     height: 52px;
     border-radius: 5px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-helvetica-neue);
 }
 #Account .BeforeOrdersContent .content .Card ul li button svg{
     margin-right: 7.5px;
@@ -1750,13 +2043,11 @@ border: 2px solid red;
 }
 
 
-
-
-
 #Account .FavoritesContent .title h2{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
     color: #2B2B2B;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
 }
 #Account .FavoritesContent .content{
     display: flex;
@@ -1851,10 +2142,11 @@ border: 2px solid red;
     content: " ";
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 12px;
     transform: translateY(-50%);
     height: 1px;
-    width: 100%;
+    width: 
+    70%;
     background: #999999;
     z-index: 1000;
 }
@@ -1871,9 +2163,10 @@ border: 2px solid red;
 #BlogInfo .title h4{
     margin: 0;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
     color: #484848;
     margin-bottom: 23px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 30px/37px var(--unnamed-font-family-helvetica-neue);
 }
 #BlogInfo .title h2{
     margin: 0;
@@ -1881,6 +2174,7 @@ border: 2px solid red;
     font-weight: bold;
     color: #212529;
     margin-bottom: 35px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/49px var(--unnamed-font-family-helvetica-neue);
 }
 #BlogInfo img{
     width: 100%;
@@ -1889,21 +2183,26 @@ border: 2px solid red;
     margin-bottom: 7px;
 }
 #BlogInfo p{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/24px var(--unnamed-font-family-helvetica-neue);
     margin: 20px 0;
     font-size: 16px;
     font-weight: 400;
     color: #2B2B2B;
 }
+
 #BlogInfo .ReadCommentDiv{
     width: 100%;
 }
+
 #BlogInfo .ReadCommentDiv h3{
-    margin: 0;
+    margin-top: 36px;
     font-size: 26px;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000;
     margin-bottom: 15px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-26)/var(--unnamed-line-spacing-32) var(--unnamed-font-family-helvetica-neue);
 }
+
 #BlogInfo .ReadCommentDiv div{
     display: flex;
     align-items: flex-end;
@@ -1920,6 +2219,12 @@ border: 2px solid red;
     padding: 18px;
     border-bottom: 1px solid #DEDEDE;
 }
+#BlogInfo .ReadCommentDiv textarea::placeholder{
+    color: #BCBCBC;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-helvetica-neue);
+}
+
+
 #BlogInfo .ReadCommentDiv button{
     margin: 12px;
     display: flex;
@@ -1949,8 +2254,9 @@ border: 2px solid red;
 #BlogInfo .comments .comment p{
     margin: 0;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     color: #333333;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-helvetica-neue);
 }
 #BlogInfo .comments .comment span{
     font-size: 12px;
@@ -1962,9 +2268,10 @@ border: 2px solid red;
 /* Questions */
 #Questions .TitleCol h2{
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
     color: #484848;
     text-align: center;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 30px/37px var(--unnamed-font-family-helvetica-neue);
 }
 #Questions .MainContentCol{
     border: 1px solid #E5E5E5;
@@ -2024,21 +2331,23 @@ border: 2px solid red;
 }
 #Questions .MainContentDiv .tab-content h3{
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
     color: #484848;
     margin-bottom: 22px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 28px/34px var(--unnamed-font-family-helvetica-neue);
 }
 #Questions .MainContentDiv .tab-content p {
     margin: 22px 0;
     font-size: 16px;
     font-weight: 400;
     color: #2B2B2B;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/24px var(--unnamed-font-family-helvetica-neue);
 }
 
 /* Contact */
 #Contact .bgIMG{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
@@ -2047,7 +2356,7 @@ border: 2px solid red;
 }
 #Contact .bgIMG img{
     width: 100%;
-    height: 100%;
+    height: 956px;
 }
 #Contact .ContactCol h2{
     margin: 0;
@@ -2232,13 +2541,23 @@ border: 2px solid red;
     background-image:url(../image/Mask\ Group\ 44.png);   
 }
 #Contact  .MapCol{
-    margin-top: 30px;
+    margin-top: 60px;
 }
 #Contact  .MapCol .content iframe{
     width: 100%;
     height: 400px;
 }
 
+.actives{
+    background: #FFF7F7;
+    color: #E10B17   
+}
+
+.actives span{
+    color: #E10B17;
+    font-weight: 500;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-helvetica-neue);
+}
 
 
 /* Reconiliation */
@@ -2253,6 +2572,7 @@ border: 2px solid red;
     background-size: cover;
     height: 590px;
     position: relative;
+    width: 100%;
 }
 #Reconiliation  .MainCon{
     margin-top: 40px;
@@ -2262,6 +2582,7 @@ border: 2px solid red;
     bottom: 0;
     left: 0;
     z-index: 1;
+    width: 100%;
 }
 #Reconiliation .banner h2{
     margin: 0;
@@ -2270,29 +2591,32 @@ border: 2px solid red;
     font-weight: 400;
     color: #FFFFFF;
     z-index: 100;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 62px/75px var(--unnamed-font-family-helvetica-neue);
 }
 #Reconiliation .banner h3{
     margin: 0;
     padding: 0;
     margin-top: 29px;
     font-size: 29px;
-    font-weight: 400;
+    font-weight: 300
+    ;
     color: #FFFFFF;
     z-index: 100;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 29px/35px var(--unnamed-font-family-helvetica-neue);
 }
 #Reconiliation .Advantages h3{
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
     color: #2B2B2B;
     margin-bottom: 32px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/39px var(--unnamed-font-family-helvetica-neue);
 }
 #Reconiliation .Advantages .advantage{
     width: 100%;
     padding: 30px;
-    background: #FAFAFA;
     border: 1px solid #E0E0E0;
     border-radius: 10px;
     margin: 11.5px 0;
@@ -2314,9 +2638,10 @@ border: 2px solid red;
     padding: 0;
     text-align: center;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
     color: #2B2B2B;
     margin-bottom: 32px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/var(--unnamed-line-spacing-20) var(--unnamed-font-family-helvetica-neue);
 }
 #Reconiliation .contactForm button{
     border: none;
@@ -2459,6 +2784,7 @@ border: 2px solid red;
     font-weight: bold;
     color: #2B2B2B;
     margin-bottom: 52px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 41px/50px var(--unnamed-font-family-helvetica-neue);
 }
 #ContactSection.ReconiliationSec .content .Cards{
     display:flex;
@@ -2477,7 +2803,7 @@ border: 2px solid red;
 }
 #ContactSection.ReconiliationSec .content .Cards .Card h5{
     font-size: 38px;
-    font-weight: 400;
+    font-weight: 500;
     color: #E10B17;
     margin: 13px 0 19px 0;
 }
@@ -2504,9 +2830,10 @@ border: 2px solid red;
     margin: 0;
     color: #2B2B2B;
     font-size: 24px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 24px/var(--unnamed-line-spacing-20) var(--unnamed-font-family-helvetica-neue);
     font-weight: bold;
 }
-#OrderCancel .content svg{
+#OrderCancel .content img{
     margin: 40px 0 60px 0;
 }
 #OrderCancel .content > p{
@@ -2514,6 +2841,7 @@ border: 2px solid red;
     color: #2B2B2B;
     font-size: 16px;
     font-weight: 400;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-helvetica-neue);
 }
 #OrderCancel .content textarea{
     margin: 18px 0;
@@ -2556,6 +2884,7 @@ border: 2px solid red;
     color: #2B2B2B;
     font-size: 20px;
     font-weight: 400;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/var(--unnamed-line-spacing-20) var(--unnamed-font-family-helvetica-neue);
 }
 #OrderCancel .content .CodeDiv span{
     margin: 0;
@@ -2565,6 +2894,7 @@ border: 2px solid red;
 }
 
 
+
 /* Sign In */
 #Account .SignInContent .MainTitle h2{
     color: #2B2B2B;
@@ -2572,6 +2902,7 @@ border: 2px solid red;
     font-weight: 400;
     text-align: center;
     margin: 0;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 27px/33px var(--unnamed-font-family-helvetica-neue);
 
 }
 #Account .SignInContent .MainTitle{
@@ -2581,11 +2912,10 @@ border: 2px solid red;
 #Account .SignInContent  h2{
     color: #2B2B2B;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 16px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
 }
-
-
 
 
 #Account .SignInContent .OtherInfos .inputs{
@@ -2615,10 +2945,14 @@ border: 2px solid red;
     outline: none;
     border: 1px solid #EEEEEE;
     border-radius: 5px;
-    padding: 16px;
     color: #757575;
     font-size:14px;
     font-weight: 400;
+}
+.cus{
+    width: 70px !important;
+height: 48px !important;
+padding: 0!important;
 }
 #Account .SignInContent .OtherInfos .inputs input,
 #Account .SignInContent .OtherInfos .inputs select,
@@ -2755,8 +3089,10 @@ border: 2px solid red;
 #Blogs .main .BlogCard .textDiv h3{
     margin: 0;
     font-size: 32px;
-    font-weight: bold;
     color: #212529;
+font-style: normal;
+font-weight: 500;
+line-height: 27px;
 }
 #Blogs .main .BlogCard .textDiv p{
     margin: 16px 0 ;
@@ -2781,12 +3117,7 @@ border: 2px solid red;
 
 
 
-#Blogs .aside .socialMedias{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+
 #Blogs .aside > div:nth-child(1){
     border: 1px solid #EFEFF1;
     border-radius: 10px;
@@ -2903,14 +3234,212 @@ border: 2px solid red;
     color: #212529;
     margin: 6.5px 0;
 }
-#Blogs .aside .categories div a:nth-child(1),
-#Blogs .aside .categories div a:last-child{
-    margin-top: 0;
+
+
+.f-tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.Products2{
+    display: none;
+}
+.sn2{
+    margin-top: 32px;
+padding-top: 32px;
+border-top: 1px solid #EFEFF1;
+display: none;
+font-weight: 500;
+color: #000000;
+
+
+}
+.s-n{
+    display: none;
+    font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+
+.actives svg path{
+    fill:#E10B17 ;
+}
 
 /* Medias */
+@media (max-width:1200px){
+    .accept a{
+        width: 100% !important;
+    }
+}
 @media (max-width:992px){
+    #Questions .MainContentDiv .tab-content p {
+        font-size: 16px;
+    }
+    #Questions .container .row .left-col{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center !important;
+    }
+    #Questions .container .row .col-3{
+        justify-content: center !important;
+        display: flex;
+    }
+    #Questions .MainContentDiv .tab-content h3{
+        font-size: 24px;
+    }
+    #Questions .container .row .left-col ul li{
+        margin-bottom: 30px;
+    }
+    #Questions .container{
+        max-width: 100%;
+    }
+    #Questions .MainContentCol {
+        padding: 0;
+        border: none;
+    }
+    #Questions .TitleCol h2{
+        display: none;
+    }
+    #BlogInfo img{
+        height: 372px;
+    }
+    #BlogInfo .title {
+        text-align: center;
+    }
+     #BlogInfo .title h4{
+        font-size: 24px;
+     }
+       #BlogInfo .title h2{
+           font-size: 24px;
+       }
+
+    .sn2{
+        display: block;
+    }
+    .Products2{
+        display: block;
+    }
+    .s-n{
+        display: block;
+    }
+    #Blogs .aside  .NewProducts .buttons button{
+    display: none;
+
+}
+    #FaqBanner .container .row .col-lg-6.ord{
+        order: -1;
+    }
+    #FaqBanner .container .row .col-lg-6{
+        margin: 0 auto;
+        display: flex ;
+        justify-content: center;
+    
+    }
+    #Faqs .col-lg-6 {
+        margin-top: 42px;
+    }
+    #Faqs .faq {
+        width: 100%;
+    }
+      #FaqBanner .content{
+          margin-top: 25px;
+      }
+    #FaqBanner .content h2{
+        font-size: 20px ;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+    #FaqBanner .content h5{
+        font-size: 16px;
+    }
+    #FaqBanner .content h5 br{
+display: none;
+
+    }
+    #Faqs .title h5 {
+        text-align: center;
+    }
+    #FollowOrder .content > p {
+        font-size: 16px;
+    }
+    #FollowOrder .content svg{
+        width: 40px;
+        height: 51px;
+    }
+    #ForgotPassword .content .emailArea p{
+        font-size: 16px;
+    }
+    #ForgotPassword .content > p {
+        font-size: 16px;
+    }
+    #ForgotPassword .content svg{
+        width: 45px;
+        height: 45px;
+    }
+    #Reconiliation .banner h2{
+        font-size: 39px;
+    }
+    #Reconiliation .banner h3{
+        margin-top: 11px;
+        font-size: 18px;
+    }
+    #Reconiliation .banner img{
+        height: 330px;
+    }
+      #Reconiliation .banner{
+        height: 338px;
+    }
+    #Account .container{
+        max-width: 100% !important;
+    }
+    #Account .MyAdressInfosContent .title{
+    flex-direction: column;
+}
+
+   #Account .MyAdressInfosContent .title a{
+       width: 349px;
+   }
+
+    #Account .MyAdressInfosContent .title h2{
+        margin-bottom: 39px;
+    }
+    #Artboard .col-12 .content h3{
+        font-size: 31px;
+        letter-spacing: normal;
+    }
+   .f-tablet{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+   }
+   .f-tablet p{
+       margin: 0 !important;
+       padding-left: 6px;
+       order: 1;
+   }
+    .DeliveryInformationCol .content .buttons a{
+        height: 46px;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .addNewAdressCol{
+        order: -1;
+    }
+    .AdressTitleCol{
+        order: -1;
+    }
+    .DeliveryInformationCol .adresses .col-lg-6.addNewAdressCol .content{
+        min-height: 55px;
+        width: 347px;
+        margin: 0 auto;
+    }
+    .AdressTitleCol h3{
+        text-align:  center !important;
+    }
     #Account .OptionsCol{
         display: none;
     }
@@ -2922,9 +3451,6 @@ border: 2px solid red;
     }
     #Account .BeforeOrdersContent .title h2{
         text-align: center;
-    }
-    #BlogInfo img{
-        height: 370px;
     }
     #Blogs .aside .socialMedias .socialCard{
         width: auto;
@@ -2993,19 +3519,145 @@ border: 2px solid red;
         width: 100%;
         max-width: 100%;
     }
-    #Questions .MainContentDiv .leftCol{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
+   
     #Reconiliation .contactForm{
         margin-top: 40px;
     }
 }
+@media(max-width:850px){
+    #Account .AccountContent .content ul li a{
+        padding: 0 15px;
+    }
+.popup-container{
+    width: 95% !important;
+}
+.Popup .popup-container form{
+    width: 90%;
+}
+
+.Popup .close-Btn {
+    right: 10px;
+    top: 10px;
+}
+}
 @media (max-width:600px){
+
+    #Blogs .aside .categories div{
+        display: flex;
+        flex-direction: column;
+    }
+    #Blogs .aside .categories .buttons a{
+        width: 100% ;
+    }
+    .socialMedias{
+        display: grid;
+    place-content: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #BlogInfo .title h4{
+        margin-bottom: 10px;
+    }
+    #Blogs .main .BlogCard .textDiv h3{
+        font-size: 23px;
+line-height: 27px;
+    }
+    #Blogs .main .BlogCard .textDiv  p{
+        font-size: 14px;
+
+
+    }
+    #Faqs .faq button{
+        margin-bottom: 25px;
+    }
+    #FaqBanner .content h2{
+        margin-bottom: 4px;
+    }
+    .ord img{
+        width: 216px;
+        height: 192px;
+    }
+    #ForgotPassword .content .emailArea input{
+        font-size: 16px;
+    }
+    #ForgotPassword .content .emailArea p {
+        font-size: 14px;
+    }
+    #Reconiliation .banner{
+        height: 238px;
+    }
+    #OrderCancel .content h2{
+        font-size: 24px;
+    }
+
+    #OrderCancel .content img{
+        width: 224px;
+        height: 82px;
+    }
+    .birthydayDiv{
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin: 5px 0 !important;
+    }
+    .cus{
+        margin: 5px 0 !important;
+        width: 75px !important;
+    }
+    
+.dis{
+    display: none !important;
+}
+.disop{
+    display: block !important;
+}
+    #Account .MyAdressInfosContent .title a{
+        width: 100%;
+    }
+    #Account .AccountContent .content ul li a{
+        display: flex;
+        justify-content: start;
+    }
+     #Account .AccountContent .content ul li a span{
+         margin: 0 auto;
+     }
+     #Account .AccountContent .content ul li a svg{
+         margin-right: 0;
+     }
+    #Account .AccountContent .content ul li{
+        width: 100%;
+        height: 83px;
+        margin-right: 0 !important;
+        margin-top: 11px !important;
+    }
+    .CreditCard .logo{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+      #Artboard .RemittanceInformation .CreditCard .infosDiv div p{
+          white-space: nowrap;
+      }
+    #Artboard .RemittanceInformation .CreditCard .infosDiv div p input{
+        width: 286px;
+    }
+    #Artboard .RemittanceInformation .CreditCard {
+        padding: 0 !important;
+    }
+    #Artboard .RemittanceInformation .CreditCard .infosDiv{
+        padding: 15px 0 !important;
+        padding-right: 0 !important;
+        padding-left: 8px !important;
+    }
+    .RemittanceInformation .top p{
+        margin-bottom: 20px !important;
+    }
+     #Artboard .col-12 .content > svg{
+        width: 94px;
+        height: 77px;
+    }
     .OrderSummaryCol .accept a{
         width: 100%;
+    }
+    .OrderCard{
+        padding: 15px 20px 10px !important;
     }
     #Account .AcooungSetiingsContent .mainInfos > input, #Account .AcooungSetiingsContent .mainInfos > div{
         width: 98%;
@@ -3058,7 +3710,10 @@ border: 2px solid red;
         margin-top: 10px;
     }
     #BlogInfo img{
-        height: 270px;
+        height: 216px;
+    }
+    #BlogInfo .ReadCommentDiv h3 {
+        font-size: 20px;
     }
     #Blogs .main .BlogCard .textDiv{
         padding: 21px;
@@ -3095,6 +3750,7 @@ border: 2px solid red;
     }
     #OrderCancel .content > p{
         text-align: center;
+        padding: 0 25px;
     }
     #OrderCancel .content button,
     #OrderCancel .content .CodeDiv,
@@ -3102,13 +3758,13 @@ border: 2px solid red;
         width: 98%;
     }
     #OrderCancel .content .CodeDiv p{
-        font-size: 14px;
+        font-size: 16px;
     }
     #OrderCancel .content .CodeDiv span{
         font-size: 16px;
     }
     #Account .SignInContent .OtherInfos .inputs > div > div input, #Account .SignInContent .OtherInfos .inputs > div > div select{
-        width: 98%;
+        width: 99%;
     }
     #Account .SignInContent .birthydayDiv{
         width: 98%;
@@ -3129,9 +3785,13 @@ border: 2px solid red;
         flex-direction: column;
     }
     #Reconiliation .banner h2{
-        text-align: center;
+        font-size: 25px;
     }
     #Reconiliation .banner h3{
-        text-align: center;
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    #Reconiliation .banner img{
+        height: 230px;
     }
 }
