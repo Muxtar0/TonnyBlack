@@ -2431,7 +2431,10 @@ font-weight: 500;
 }
 #Contact .bgIMG img{
     max-width:100%;
-    height: 1044px;
+    object-fit: contain;
+}
+.ta{
+    display: none;
 }
 #Contact .ContactCol  {
     width: 35% !important;
@@ -3360,6 +3363,9 @@ color: #000000;
 #Reconiliation .contactForm div.telephone {
     margin-top: 5px ;
 }
+.ta3{
+    display: none;
+}
 /* Medias */
 @media (max-width:1200px){
     .accept a{
@@ -3367,6 +3373,12 @@ color: #000000;
     }
 }
 @media (max-width:992px){
+    #Contact .bgIMG .ta2{
+        display: none !important;
+    }
+    .ta{
+        display: block;
+    }
     #Account .FavoritesContent .Card  {
         position: relative;
     }
@@ -3752,6 +3764,18 @@ margin-top: 28px;
      }
 }
 @media (max-width:600px){
+    #Contact .ContactCol{
+        margin-top: 0;
+    }
+    .ta2{
+        display: none !important;
+    }
+    .ta{
+        display: none !important;
+    }
+    .ta3{
+        display: block !important;
+    }
     #Account .BeforeOrdersContent .content .Card ul li button{
         width: 140px !important;
     }
@@ -3957,6 +3981,8 @@ line-height: 27px;
     #Account .BeforeOrdersContent .content .Card ul li:nth-child(3){
         width: 100%;
         margin-top: 10px;
+     
+      
     }
     #BlogInfo img{
         height: 216px;
