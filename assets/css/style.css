@@ -2422,17 +2422,18 @@ font-weight: 500;
 }
 
 /* Contact */
-#Contact .bgIMG{
+
+#Contact .ta2{
+    z-index: -1;
     position: absolute;
     top: 0;
-    right: 0;
-    z-index: -1;
-    width: 50%;
+    left: 0;
+    height: 1045px;
+    background: url(../image/08_Architect-Offices-Rivierstaete-Kantoren-Amsterdam-MVSA-©Barwerd_van_der_Plas_W.png);
+    width: 100%;
+    background-size: cover;
 }
-#Contact .bgIMG img{
-    max-width:100%;
-    object-fit: contain;
-}
+
 .ta{
     display: none;
 }
@@ -2478,10 +2479,11 @@ font-weight: 500;
     margin: 0;
     padding: 0;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     color: #2B2B2B;
     text-align: start;
-    width: 50%;
+    width: 55%;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-12) var(--unnamed-font-family-helvetica-neue);
 }
 
 #Contact .ContactCol .contentInputs{
@@ -3378,6 +3380,7 @@ color: #000000;
     }
     .ta{
         display: block;
+        width: 100% !important;
     }
     #Account .FavoritesContent .Card  {
         position: relative;
@@ -3775,6 +3778,8 @@ margin-top: 28px;
     }
     .ta3{
         display: block !important;
+        max-width: 100%;
+        object-fit: contain;
     }
     #Account .BeforeOrdersContent .content .Card ul li button{
         width: 140px !important;
