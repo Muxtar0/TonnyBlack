@@ -10,18 +10,54 @@
     font-family: 'Roboto', sans-serif;
     resize:none !important;
 }
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") !important;
+    background-repeat: no-repeat !important;
+    background-position:right 14px !important;
+}
+
 body,html{
     width: 100%;
     padding: 30px 0;
 }
 /* Global Style */
 /* Delivery Information */
+
+.Conditions{
+    border: 0.1px solid #fff;
+}
+
+.che2{
+    border: 0.1px solid #fff;
+}
+.che2.active{
+    border: 0.1px solid #2B2B2B !important;
+}
+.Conditions.active{
+    border: 0.1px solid #2B2B2B !important;
+}
+
+.OrderSummaryCol .accept a:hover{
+    background: #E10B17;
+    transition: 300ms all;
+}
 .DeliveryInformationCol .content .buttons{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.allBtn{
+    transition: 300ms all;
+}
+.allBtn:hover{
+    background: #E10B17 !important;
+}
+
 .DeliveryInformationCol .content .buttons a{
     display: flex;
     align-items: center;
@@ -534,7 +570,7 @@ font-size: 17px;
   position: absolute;
     transition: 300ms all;
     left: 56%;
-    top:79%;
+    top:81%;
     position: absolute;
     background: #000;
     padding: 10px 20px;
@@ -1190,18 +1226,14 @@ border: 2px solid red;
     margin-right: 15px;
 }
 #Faqs .faq .openTextArea{
-     visibility: hidden;
-     height: 0;
-     opacity: 0;
-     transition: 500ms all;
+    max-height: 0;
+	overflow: hidden;
+    transition: max-height 1.3s;
      
 }
 
 #Faqs .faq.active .openTextArea{
-    visibility: visible;
-    opacity: 1;
-    height: auto;
-    transform: translateX(-15px);
+    max-height:200px;
 
 }
 /* Account */
@@ -2049,9 +2081,39 @@ border: 2px solid red;
     font-size: 18px;
     font-weight: 500;
 }
+.indirim{
+    margin-top: 8px;
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 47px;
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    
+}
+
+.indirim  p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+color: #E10B17;
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+
+}
+.indirim span{
+    font-size: 14px;
+    font-weight: 400;
+line-height: 17px;
+font-style: normal;
+color: #2B2B2B;
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+
+}
+
 #Account .FavoritesContent .content{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 #Account .FavoritesContent .Card{
@@ -2066,6 +2128,7 @@ border: 2px solid red;
     background: #F8F8F8;
     border-radius: 9px;
     height: 413px;
+    position: relative;
 
 }
 #Account .FavoritesContent .Card .LikeIconBTN{
@@ -2098,10 +2161,13 @@ border: 2px solid red;
 #Account .FavoritesContent .Card .Infos h3{
     margin: 0;
     font-size: 16px;
-    font-weight: 400;
     color: #202020;
     text-align: center;
     margin-bottom: 14px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    
+font-style: normal;
+font-weight: 500;
 }
 #Account .FavoritesContent .Card .Infos > div{
     display: flex;
@@ -2122,9 +2188,13 @@ border: 2px solid red;
 #Account .FavoritesContent .Card .Infos > div .discountPercent p{
     margin: 0;
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 500;
     color: #202020;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    
+    
 }
+
 #Account .FavoritesContent .Card .Infos > div .discountPercent span{
     font-size: 12px;
     font-weight: 400;
@@ -2137,24 +2207,27 @@ border: 2px solid red;
     color: #999999;
     text-align: center;
     position: relative;
+    display: flex;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+
 }
 #Account .FavoritesContent .Card .Infos > div .discountPrice p::after{
     content: " ";
     position: absolute;
-    top: 50%;
-    left: 12px;
+    top: 57%;
+    left: 1px;
     transform: translateY(-50%);
     height: 1px;
-    width: 
-    70%;
+    width:  54px;
     background: #999999;
     z-index: 1000;
 }
 #Account .FavoritesContent .Card .Infos > div .discountPrice span{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: #202020;
     text-align: center;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/24px var(--unnamed-font-family-helvetica-neue);
 }
 
 
@@ -2288,6 +2361,7 @@ border: 2px solid red;
 }
 #Questions .MainContentDiv .leftCol ul li{
     margin: 12px 0;
+    white-space: nowrap;
 }
 #Questions .MainContentDiv .leftCol ul li button{
     background-color: transparent;
@@ -3267,6 +3341,15 @@ color: #000000;
     fill:#E10B17 ;
 }
 
+#mobileQue,#mobil-menu{
+    display: none;
+}
+#Account .SignInContent .OtherInfos div.telephone{
+    margin-top: 4px;
+}
+#Reconiliation .contactForm div.telephone {
+    margin-top: 5px ;
+}
 /* Medias */
 @media (max-width:1200px){
     .accept a{
@@ -3274,6 +3357,26 @@ color: #000000;
     }
 }
 @media (max-width:992px){
+    #Account .FavoritesContent .Card  {
+        position: relative;
+    }
+    #Account .FavoritesContent .Card .Infos > div .discountPercent{
+        margin-right: 0;
+        position: absolute;
+         top:345px;
+         left: 12px;
+    }
+    .discountPrice{
+        display: flex;
+    align-items: center;
+    }
+  
+    #Account .FavoritesContent .Card .Infos{
+        padding: 34px 15px;
+    }    
+    #Account .FavoritesContent .Card .Infos > div .discountPrice span{
+        margin-left: 14px;
+    }
     #Questions .MainContentDiv .tab-content p {
         font-size: 16px;
     }
@@ -3540,8 +3643,128 @@ display: none;
     top: 10px;
 }
 }
-@media (max-width:600px){
+@media(max-width:768px){
+    #mobileQue,#mobil-menu{
+    display: block;
+}
+    #Questions{
+        display: none;
+    }
 
+    #mobileQue .top-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    #mobileQue .top-content.active{
+        background: #E10B17;
+    }
+    #mobileQue .top-content.active span{
+        color:#fff;
+    }
+    #mobil-menu{
+        position: absolute;
+        background: #FFFFFF;
+        overflow: hidden;
+        width: 100%;
+        top: 160px;
+        height: 0;
+        transition: 800ms all;
+    }
+    #mobil-menu.active{
+        height:calc(100vh - 155px);
+    }
+    #mobil-menu ul{
+        padding-bottom: 0;
+        padding-left: 27px;
+    }
+     #mobil-menu ul li{
+         margin-bottom: 28px;
+     }
+     #mobil-menu ul li a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #585858;
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+
+     }
+      #mobileQue .top-content {
+        background: #E5E5E5;
+          padding-top: 25px;
+          padding-left: 27px;
+          display: flex;
+          align-items: center;
+          padding-right: 29px;
+          padding-bottom: 23px;
+          transition: 400ms all;
+      }
+
+          #mobileQue .top-content.active svg{
+              transform: rotate(180deg);
+          }
+          #mobileQue .top-content.active svg path{
+              fill:#fff;
+          }
+    
+
+     #mobileQue .top-content span{
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #2B2B2B;
+     }
+     .bottom-content{
+         padding-left: 27px;
+         margin-top: 32px;
+     }
+     .bottom-content h3{
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+font-weight: 500;
+font-size: 24px;
+margin: 0;
+     }
+     .bottom-content p{
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+font-weight: 400;
+font-size: 16px;
+margin-top: 28px;
+
+     }
+}
+@media (max-width:600px){
+    #Account .AcooungSetiingsContent .mainInfos .birthydayDiv{
+        margin-top: 13px !important;
+    }
+      #Account .AcooungSetiingsContent .mainInfos .birthydayDiv p{
+          text-align: center;
+      }
+    #Account .AcooungSetiingsContent .mainInfos input:nth-child(1),
+#Account .AcooungSetiingsContent .mainInfos input:nth-child(3),
+#Account .AcooungSetiingsContent .mainInfos input:nth-child(5){
+    margin-right: 0px;
+}
+    .indirim{
+        width: 169px;
+    }
+    #Account .FavoritesContent .Card .Infos > div .discountPrice span{
+        font-size: 16px !important;
+    }
+   .c2{
+    padding: 0 1px;
+   }
+    
+    #Account .FavoritesContent .Card .Infos{
+        padding: 0;
+        margin-top: 15px;
+    }
+        #Account .FavoritesContent .Card .Infos > div .discountPercent{
+        margin-right: 0;
+        position: absolute;
+        top: 184px;
+        left: 15px;
+    }
+   
     #Blogs .aside .categories div{
         display: flex;
         flex-direction: column;
@@ -3666,10 +3889,14 @@ line-height: 27px;
         width: 98%;
     }
     #Account .AddNewAdressContent .OtherInfos .inputs > div input, #Account .AddNewAdressContent .OtherInfos .inputs > div select{
-        width: 98%;
+        width: 100%;
+    }
+    #Account .AddNewAdressContent .OtherInfos .inputs > div{
+        margin: 0;
     }
     #Account .AddNewAdressContent .OtherInfos div.telephone{
-        width: 98%;
+        width: 100%;
+        margin: 5px 0;
     }
     #Account .AddNewAdressContent .OtherInfos button{
         width: 98%;
@@ -3728,11 +3955,30 @@ line-height: 27px;
     #Contact .bgIMG{
         height: 300px;
     }
+    .FavoritesContent .title{
+        border-bottom: 1px solid #F4F4F4;
+        padding-bottom: 23px;
+    }
+    #Account .FavoritesContent .Card .ImageDiv{
+        margin:0 !important;
+        height: 255px;
+    }
+    #Account .FavoritesContent .Card:nth-child(odd) {
+    padding-right: 8px;
+    }
+    #Account .FavoritesContent .Card .ImageDiv:nth-child(add){
+        margin-right: 8px !important;
+    }
+     #Account .FavoritesContent .Card {
+         width: 170px;
+         
+     }
     #Account .FavoritesContent .content{
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
     #Account .FavoritesContent .Card{
-        width: 98%;
+        width: 100%;
     }
     #Account .FavoritesContent .title h2{
         text-align: center;
@@ -3764,13 +4010,13 @@ line-height: 27px;
         font-size: 16px;
     }
     #Account .SignInContent .OtherInfos .inputs > div > div input, #Account .SignInContent .OtherInfos .inputs > div > div select{
-        width: 99%;
+        width: 100%;
     }
     #Account .SignInContent .birthydayDiv{
         width: 98%;
     }
     #Account .SignInContent .OtherInfos div.telephone{
-        width: 98%;
+        width: 100%;
     }
     #Account .SignInContent .OtherInfos button{
         width: 98%;

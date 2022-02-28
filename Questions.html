@@ -148,12 +148,46 @@
             </div>
         </div>
     </section>
+
+    <section id="mobileQue">
+       <div class="top-content">
+           <span> Gizlilik ve Güvenlik </span>
+           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(149, 149, 149, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+       </div>
+       <div class="bottom-content">
+           <h3>
+            Gizlilik ve Güvenlik
+           </h3>
+           <p class="des">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.
+           </p>
+       </div>
+    </section>
+
+    <section id="mobil-menu">
+        <ul>
+            <li><a href="#"> Sıkça Sorulan Sorular </a></li>
+            <li><a href="#"> Teslimat Bilgileri </a></li>
+            <li><a href="#"> İade ve Değişim </a></li>
+            <li><a href="#"> Hakkımızda  </a></li>
+            <li><a href="#"> Hesap Numaralarımız  </a></li>
+            <li><a href="#"> İletişim  </a></li>
+        </ul>
+
+    </section>
     <!-- Questions end -->
 
     <script>
         const tabTarget = document.querySelectorAll('.tabTarget')
         const tabContent = document.querySelectorAll('.tab-content')
+        const topContent = document.querySelector('.top-content');
+        const mobilMenu = document.querySelector('#mobil-menu');
+       
 
+topContent.addEventListener('click', function(){
+    topContent.classList.toggle('active')
+    mobilMenu.classList.toggle('active')
+})
         for(let i = 0 ; i < tabTarget.length;i++){
             tabTarget[i].addEventListener('click' , (e) => {
                 for(let i = 0 ; i < tabContent.length;i++){

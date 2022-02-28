@@ -160,8 +160,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="Conditions">
-                                    <input type="checkbox">
+                                <div class="Conditions che">
+                                    <input class="ch" type="checkbox">
                                     <p><a href="#">Ön Bilgilendirme Koşulları’nı</a> ve <a href="#">Mesafeli Satış Sözleşmesi’ni</a> okudum, onaylıyorum</p>
                                 </div>
                                 <div class="accept">
@@ -203,6 +203,14 @@
           opMod.classList.toggle('active')
           imageRotate.classList.toggle('active')
       })
+
+      const ch = document.querySelectorAll('.ch');
+       const Conditions = document.querySelectorAll(".che");
+       for(let i = 0 ; i<ch.length && Conditions.length ; i++){
+           ch[i].addEventListener('click', function(){
+            Conditions[i].classList.toggle('active')
+           })
+       }
     </script>
 </body>
 </html>
