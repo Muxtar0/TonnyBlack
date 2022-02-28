@@ -2036,6 +2036,8 @@ border: 2px solid red;
     justify-content: space-between;
     margin: 0;
 }
+
+
 #Account .BeforeOrdersContent .content .Card ul li h5{
     font-size: 14px;
     font-weight: 5
@@ -3733,6 +3735,9 @@ margin-top: 28px;
      }
 }
 @media (max-width:600px){
+    #Account .BeforeOrdersContent .content .Card ul li button{
+        width: 140px !important;
+    }
     #Account .AcooungSetiingsContent .mainInfos .birthydayDiv{
         margin-top: 13px !important;
     }
@@ -3935,6 +3940,8 @@ line-height: 27px;
     #Account .BeforeOrdersContent .content .Card ul li:nth-child(3){
         width: 100%;
         margin-top: 10px;
+     
+      
     }
     #BlogInfo img{
         height: 216px;
