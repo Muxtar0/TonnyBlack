@@ -2428,10 +2428,12 @@ font-weight: 500;
     position: absolute;
     top: 0;
     left: 0;
-    height: 1045px;
+    height: 1065px;
     background: url(../image/08_Architect-Offices-Rivierstaete-Kantoren-Amsterdam-MVSA-©Barwerd_van_der_Plas_W.png);
     width: 100%;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .ta{
