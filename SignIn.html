@@ -152,7 +152,7 @@
                                                         <div class="option" data-type="tr"><img src="assets/image/Mask Group 44.png" alt=""></div>
                                                     </div>
                                                 </div>
-                                                <input type="tel" value="+90">
+                                                <input type="text" placeholder="+90" data-js="input" id="phone" />
                                             </div>
                                         </div>
                                         <textarea name="adress" cols="30" rows="5" placeholder="Adres"></textarea>
@@ -189,7 +189,7 @@
                                                         <div class="option" data-type="tr"><img src="assets/image/Mask Group 44.png" alt=""></div>
                                                     </div>
                                                 </div>
-                                                <input type="tel" value="+90">
+                                                <input type="text" placeholder="+90" data-js="input" id="phone" />
                                             </div>
                                         </div>
                                         <textarea name="adress" cols="30" rows="5" placeholder="Adres"></textarea>
@@ -206,8 +206,6 @@
                                                 <option value="1">1</option>
                                                 <option value="1">1</option>
                                             </select>
-                                            
-                                            
                                     </div>
                                     
                                     <button>Kaydet</button>
@@ -221,6 +219,24 @@
     </section>
     <!-- Account end -->
     <script>
+ const $input = document.querySelectorAll('[data-js="input"]')
+ for(let i = 0 ; i<$input.length; i++){
+    $input[i].addEventListener('input', handleInput, false)
+ }
+
+function handleInput (e) {
+  e.target.value = phoneMask(e.target.value)
+}
+
+function phoneMask (phone) {
+  return phone.replace(/\D/g, '')
+    .replace(/^(\d)/, '($1')
+    .replace(/^(\(\d{3})(\d)/, '$1) $2')
+    .replace(/(\d{3})(\d{1,5})/, '$1-$2')
+    .replace(/(-\d{4})\d+?$/, '$1');
+}
+
+
         const select = document.querySelectorAll('.selectBtn');
 const option = document.querySelectorAll('.option');
 let index = 1;

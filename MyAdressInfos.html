@@ -318,7 +318,7 @@
                 <option value="İstanbul"> Fatih</option>
                 <option value="İstanbul"> Fatih</option>
               </select>
-              <input id="phone" type="tel" name="phone" />
+              <input id="phone" type="tel" placeholder="+90" data-js="input" name="phone" />
               <textarea cols="30" rows="10"></textarea>
               <button class="pop-btn" type="submit"> Güncelle </button>
          </form>
@@ -329,6 +329,24 @@
     </div>
 
   <script>
+       const $input = document.querySelectorAll('[data-js="input"]')
+ for(let i = 0 ; i<$input.length; i++){
+    $input[i].addEventListener('input', handleInput, false)
+ }
+
+function handleInput (e) {
+  e.target.value = phoneMask(e.target.value)
+}
+
+function phoneMask (phone) {
+  return phone.replace(/\D/g, '')
+    .replace(/^(\d)/, '($1')
+    .replace(/^(\(\d{3})(\d)/, '$1) $2')
+    .replace(/(\d{3})(\d{1,5})/, '$1-$2')
+    .replace(/(-\d{4})\d+?$/, '$1');
+}
+
+
    const phoneInputField = document.querySelector("#phone");
    const phoneInput = window.intlTelInput(phoneInputField, {
     preferredCountries: ["tr"],

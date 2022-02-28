@@ -111,6 +111,11 @@ font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-m
     border-color: #E10B17;
 }
 
+#Account .SignInContent .OtherInfos .inputs > div > div input, #Account .SignInContent .OtherInfos .inputs > div > div select{
+    width: 100%;
+    padding-left: 10px !important;
+}
+
 .info-bt{
     margin-top: 38px;
      padding-top: 38px;
@@ -3138,6 +3143,7 @@ padding: 0!important;
     font-size: 14px;
     font-weight: 400;
     color: #757575;
+    text-align: center;
 }
 #Account .SignInContent .birthydayDiv select{
     padding: 15px;
@@ -4072,6 +4078,7 @@ line-height: 27px;
     }
     #Account .SignInContent .OtherInfos .inputs > div > div input, #Account .SignInContent .OtherInfos .inputs > div > div select{
         width: 100%;
+        padding-left: 10px !important;
     }
     #Account .SignInContent .birthydayDiv{
         width: 98%;
