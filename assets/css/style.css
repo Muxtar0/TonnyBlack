@@ -1060,6 +1060,13 @@ background: #FAFAFA 0% 0% no-repeat padding-box;
 
 .OrderAdres .dis{
     width: 363px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+}
+.OrderAdres .dis  .OrderCard{
+    width: 100%;
 }
 .PaymentMetodCol .paymentMetod .col-lg-12 .content .top  label svg{
     margin: 0 17px;
@@ -3720,10 +3727,233 @@ color: #2B2B2B;
 opacity: 1;
 font-weight: 500;
 }
+.ordersdiv .order{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding-top: 21px;
+    border-top: 1px solid #F4F4F4;
+    margin-top: 21px;
+    position: relative;
+}
+.ordersdiv .order .imageDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ordersdiv .order .imageDiv div{
+    height: 200px;
+    width: 130px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+}
+.ordersdiv .order .imageDiv div img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.ordersdiv .order .infoOrder{
+    margin-left: 30px;
+}
+.ordersdiv .order .infoOrder h3{
+    color: #202020;
+    font-size: 16px;
+    font-weight: medium;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    margin-bottom: 8px;
+}
+.ordersdiv .order .infoOrder .littleInfo{
+    color: #5D5D5D;
+    font-size: 16px;
+    font-weight: medium;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    margin-bottom: 10px;
+}
+.ordersdiv .order .infoOrder .deletePrice {
+    color: #9B9B9B;
+    font-size: 14px;
+    font-weight: medium;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    margin-bottom: 1px;
+    position: relative;
+}
+.ordersdiv .order .infoOrder .deletePrice::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: #9B9B9B;
+}
+.ordersdiv .order .infoOrder .price{
+    display: block;
+    color: #2B2B2B;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    margin-bottom: 1px;
+}
+.ordersdiv .order .infoOrder .discount{
+    border: 1px solid #E50A19;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 8px;
+}
+.ordersdiv .order .infoOrder .discount p{
+    margin: 0;
+    color: #2B2B2B;
+    font-size: 13px;
+    font-weight: medium;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+
+}
+.ordersdiv .order .infoOrder .discount p span{
+    color: #E10B17;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+}
+.ordersdiv .order .infoOrder .features{
+    display: flex;
+    align-items: center;
+}
+.ordersdiv .order .infoOrder .features ul{
+    margin: 0;
+    padding: 0;
+}
+.ordersdiv .order .infoOrder .features ul:nth-child(2){
+    margin-left: 40px;
+}
+.ordersdiv .order .infoOrder .features ul li{
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+}
+.ordersdiv .order .infoOrder .features ul li p{
+    margin: 0;
+    color: #8D8D8D;
+    font-size: 14px;
+    font-weight: medium;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+}
+.ordersdiv .order .infoOrder .features ul li span{
+    margin: 0;
+    color: #1D1D1D;
+    font-size: 14px;
+    font-weight: medium;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+}
+.OrderRulesCol .rulesDiv h2{
+    margin-bottom: 34px;
+    color: #2B2B2B;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+}
+.OrderRulesCol .rulesDiv h2 span{
+    color: #838383;
+}
+.OrderRulesCol .rulesDiv h5{
+    margin-bottom: 11px;
+    color: #2B2B2B;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+}
+.OrderRulesCol .rulesDiv div{
+    height: 200px;
+    width: 100%;
+    background: #FAFAFA;
+    border-radius: 7px;
+    padding: 28px 40px;
+    height: 200px;
+    overflow-y: scroll;
+}
+.OrderRulesCol .rulesDiv div p{
+    color: #9F9F9F;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+}
+.deleteOrderButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+}
+.countDiv{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.countDiv input{
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 31px;
+    border-radius: 10px;
+    margin: 0 11px;
+    border: 1px solid #EEEEEE;
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-regular) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+}
+.countDiv  button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
 /* Medias */
 @media(max-width:1400px){
     .swiper-button-prev, .swiper-rtl .swiper-button-next{
         left:93.8% !important; 
+    }
+    .ordersdiv .order .infoOrder h3{
+        margin-bottom: 4px;
+    }
+    .ordersdiv .order .infoOrder .littleInfo{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .ordersdiv .order .infoOrder .deletePrice{
+        font-size: 12px;
+    }
+    .ordersdiv .order .infoOrder .price{
+        font-size: 14px;
+    }
+    .ordersdiv .order .infoOrder .discount p{
+        font-size: 12px;
+    }
+    .ordersdiv .order .infoOrder .discount p span{
+        font-size: 13px;
+    }
+    .ordersdiv .order .infoOrder .discount{
+        margin-top: 4px;
+        padding: 4px 5px;
+    }
+    .ordersdiv .order .infoOrder .features{
+        margin-top: 4px;
+    }
+    .ordersdiv .order .infoOrder .features ul li p{
+        font-size: 12px;
+    }
+    .ordersdiv .order .infoOrder .features ul li span{
+        font-size: 11px;
+    }
+    .ordersdiv .order .infoOrder .features ul li{
+        margin: 2px 0;
     }
 }
 @media (max-width:1200px){
@@ -4086,6 +4316,32 @@ display: none;
     #BlogInfo img{
         height: 372px;
     }
+    .adrestime {
+        position: relative;
+    }
+    .adrestime p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .ordersdiv .order .infoOrder{
+        width: calc(100% - 200px);
+    }
+    .OrderRulesCol{
+        margin-top: 40px;
+    }
+    .OrderRulesCol .rulesDiv h2{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+    .OrderRulesCol .rulesDiv h5{
+        display: none;
+    }
+    .num-p{
+        text-align: center;
+    }
 }
 @media (max-width:600px){
     .OrderSummaryCol .content{
@@ -4101,7 +4357,31 @@ display: none;
     left: 13px;
    
 }
-    
+.adrestime button{
+    display: none;
+}
+.adrestime p{
+    font-size: 14px;
+    position: relative;
+    transform: translate(0,0);
+    left: 0;
+    top: 0;
+    margin-left: 15px;
+}
+.ordersdiv .order .infoOrder{
+    width: auto;
+}
+.countDiv {
+    right: auto;
+    left: 22px;
+    bottom: -15px;
+}
+.OrderSummaryCol .content{
+    margin-top: 84px;
+}
+.ordersdiv .order .imageDiv div{
+    margin-bottom: 25px;
+}
     #Blogs .aside .categories div a{
         margin-left: 0;
     }
