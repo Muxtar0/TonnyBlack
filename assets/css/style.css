@@ -3915,6 +3915,38 @@ font-weight: 500;
     border: none;
     outline: none;
 }
+.waitAdress#Account .BeforeOrdersContent .content .Card{
+    position: relative;
+}
+.waitAdress#Account .BeforeOrdersContent .content .Card:not(:nth-child(1)):before{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    width: 96%;
+    height: 1px;
+    background: #E5E5E5;
+}
+.waitAdress#Account .BeforeOrdersContent .content .Card ul li h5{
+    font-size: 14px;
+    font-weight: bold;
+    color: #2B2B2B;
+
+}
+.waitAdress#Account .BeforeOrdersContent .content .Card ul li p{
+    color: #2B2B2B;
+    font-size: 16px;
+    font-weight: 400;
+}
+#Account .BeforeOrdersContent .content .Card ul li p.price{
+    color: #E10B17;
+}
+#Account .BeforeOrdersContent .content .Card.cardAdrekleme ul li p.price{
+    color: #E10B17;
+    font-weight: bold;
+}
+
 /* Medias */
 @media(max-width:1400px){
     .swiper-button-prev, .swiper-rtl .swiper-button-next{
