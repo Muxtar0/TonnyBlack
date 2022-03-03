@@ -4071,126 +4071,21 @@ display: none;
     #Reconiliation .contactForm{
         margin-top: 40px;
     }
-    #Account .SignInContent .MainTitle h2{
-        display: none;
+    #BlogInfo .title h4{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 11px;
     }
-    #ContactSection.ReconiliationSec .content .Cards .Card h5{
-        font-size: 16px;
-        margin-bottom: 8px;
+    #BlogInfo .title h2{
+        text-align: center;
+        max-width: 349px;
+        margin: 0 auto;
+        font-size: 24px;
+        margin-bottom: 17px;
     }
-    #ContactSection.ReconiliationSec .content .Cards .Card p{
-        font-size: 16px;
+    #BlogInfo img{
+        height: 372px;
     }
-    #ContactSection.ReconiliationSec .content h2{
-        font-size: 20px;
-        margin-bottom: 29px;
-    }
-}
-@media(max-width:850px){
-    #Account .AccountContent .content ul li a{
-        padding: 0 15px;
-    }
- 
-.popup-container{
-    width: 95% !important;
-}
-.Popup .popup-container form{
-    width: 90%;
-}
-
-.Popup .close-Btn {
-    right: 10px;
-    top: 10px;
-}
-}
-@media(max-width:768px){
-    #mobileQue,#mobil-menu{
-    display: block;
-}
-    #Questions{
-        display: none;
-    }
-
-    #mobileQue .top-content{
-        display: flex;
-        justify-content: space-between;
-    }
-    #mobileQue .top-content.active{
-        background: #E10B17;
-    }
-    #mobileQue .top-content.active span{
-        color:#fff;
-    }
-    #mobil-menu{
-        position: absolute;
-        background: #FFFFFF;
-        overflow: hidden;
-        width: 100%;
-        top: 160px;
-        height: 0;
-        transition: 800ms all;
-    }
-    #mobil-menu.active{
-        height:calc(100vh - 155px);
-    }
-    #mobil-menu ul{
-        padding-bottom: 0;
-        padding-left: 27px;
-    }
-     #mobil-menu ul li{
-         margin-bottom: 28px;
-     }
-     #mobil-menu ul li a{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        color: #585858;
-font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
-
-     }
-      #mobileQue .top-content {
-        background: #E5E5E5;
-          padding-top: 25px;
-          padding-left: 27px;
-          display: flex;
-          align-items: center;
-          padding-right: 29px;
-          padding-bottom: 23px;
-          transition: 400ms all;
-      }
-
-          #mobileQue .top-content.active svg{
-              transform: rotate(180deg);
-          }
-          #mobileQue .top-content.active svg path{
-              fill:#fff;
-          }
-    
-
-     #mobileQue .top-content span{
-font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-color: #2B2B2B;
-     }
-     .bottom-content{
-         padding-left: 27px;
-         margin-top: 32px;
-     }
-     .bottom-content h3{
-font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
-font-weight: 500;
-font-size: 24px;
-margin: 0;
-     }
-     .bottom-content p{
-font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
-font-weight: 400;
-font-size: 16px;
-margin-top: 28px;
-
-     }
 }
 @media (max-width:600px){
     .OrderSummaryCol .content{
