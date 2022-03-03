@@ -3976,6 +3976,14 @@ font-weight: 500;
         object-fit: contain;
     }
 }
+@media (min-width:992px){
+    .deleteOrderButton{
+        display: none;
+    }
+    .countDiv{
+        display: none;
+    }
+}
 @media (max-width:992px){
 
     .OrderAdres .dis{
