@@ -26,6 +26,43 @@ body,html{
 }
 /* Global Style */
 /* Delivery Information */
+.mobil-top-area{
+    text-align: center;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #F4F4F4;
+    margin-bottom: 25px;
+}
+
+.mobil-top-area .container{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobil-top-area .container h3{
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+color: #2B2B2B;
+margin-bottom: 0;
+}
+
+.mobil-top-area button{
+    width: 57px;
+    height: 33px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 0;
+    border: 1px solid #D1D1D1;
+    border-radius: 700px;
+}
+
 
 .Conditions{
     border: 0.1px solid #fff;
@@ -511,6 +548,10 @@ font-size: 17px;
     justify-content: center;
     margin: 30px 0 20px 0;
 }
+
+#Account .BeforeOrdersContent .content .Card ul li .infoOrder{
+    margin-left: 16px;
+}
 #Artboard .RemittanceInformation .top div h4{
     margin: 0;
     font-size: 20px;
@@ -537,11 +578,15 @@ font-size: 17px;
     display: flex;
     justify-content: space-between;
     background: #F8F8F8;
+
+    align-items: center;
     border-radius: 8px;
     padding: 25px 31px;
     margin-top: 21px;
 }
-
+#Artboard .RemittanceInformation .CreditCard .infosDiv p{
+    margin: 0;
+}
 .copy-text{
     opacity: 0;
     transition: 300ms all;
@@ -651,14 +696,18 @@ font-size: 17px;
 .noneBlock{
     visibility: hidden;
     opacity: 0;
-    transition: 300ms all;
-    margin-top: -30px;
+    transition: 400ms all;
+    height: 0;
+    display: block !important;
 }
 
+.btn-center{
+    margin: 0 auto;
+}
 .noneBlock.active{
     visibility: visible;
     opacity: 1;
-    margin-top: 0px;
+    height:fit-content;
 }
 
 .Popup.active{
@@ -1003,6 +1052,14 @@ background: #FAFAFA 0% 0% no-repeat padding-box;
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.OrderAdres {
+    padding-right: 25px;
+}
+
+.OrderAdres .dis{
+    width: 363px;
 }
 .PaymentMetodCol .paymentMetod .col-lg-12 .content .top  label svg{
     margin: 0 17px;
@@ -2989,7 +3046,9 @@ font-weight: 500;
     font-weight: 400;
 }
 
-
+.NoScrool.active{
+   overflow: hidden !important;
+}
 
 /* Sign In */
 #Account .SignInContent .MainTitle h2{
@@ -3210,6 +3269,142 @@ line-height: 27px;
     color: white;
     font-size: 17px;
     font-weight: 400;
+    transition: 300ms all;
+}
+.blogs-title{
+    margin-top: 40px;
+    margin-bottom: 28px;
+}
+
+.swiper-content{
+    width: 308px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+border: 1px solid var(--unnamed-color-e0e0e0);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #E0E0E0;
+border-radius: 10px;
+opacity: 1;
+}
+
+.swiper-content img{
+    width: 100%;
+}
+.swiper-content{
+    padding-bottom: 26px;
+}
+.card-content{
+    padding-left: 30px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.card-content .time{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-9fa6ba);
+text-align: left;
+font: normal normal medium 16px/19px Helvetica Neue;
+letter-spacing: 0px;
+color: #9FA6BA;
+opacity: 1;
+font-family: 500;
+display: block;
+margin-bottom: 16px;
+}
+
+.card-content  p{
+    padding: 0;
+    margin: 0;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-212529);
+text-align: left;
+font: normal normal medium 18px/23px Helvetica Neue;
+letter-spacing: 0px;
+color: #212529;
+opacity: 1;
+font-weight: bold;
+}
+
+.swiper-content a{
+font-weight: bold;
+    margin-top: 41px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-20) var(--unnamed-font-family-product-sans);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1f1f1f);
+text-align: left;
+
+letter-spacing: 0px;
+color: #1F1F1F;
+    width: 279px;
+height: 55px;
+border: 2px solid #F2F2F2;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 300ms all;
+margin: 0 auto;
+
+}
+
+.swiper-content a:hover{
+    background: #000;
+    color:#fff;
+}
+
+.swiper-button-prev:after{
+    content: "f104";
+    color:#000;
+    font-size: 12px !important;
+    font-weight: bold;
+    background: var(--unnamed-color-ffffff) ;
+background: #FFFFFF;
+border: 1px solid #EFEFEF;
+border-radius: 8px;
+opacity: 1;
+display: flex;
+align-items: center;
+padding: 11px 12px;
+justify-content: center;
+}
+.swiper-button-next:after{
+    padding: 11px 12px;
+    content: "f105";
+    background: var(--unnamed-color-ffffff)
+;
+background: #FFFFFF;
+border: 1px solid #EFEFEF;
+border-radius: 8px;
+    color:#000;
+    font-size: 12px !important;
+
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.swiper-container {
+    overflow: visible;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    position: absolute;
+    top:60px !important;
+    left:94.8% !important; 
+    border-radius: 8px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    position: absolute;
+    top:61px !important;
+border-radius: 8px;
+right: 2px !important;
+
+}
+
+
+#Blogs .main .BlogCard .textDiv button:hover{
+    border: 1px solid #E10B17;
+    color:#E10B17;
+    background: transparent;
 }
 
 
@@ -3269,16 +3464,24 @@ line-height: 27px;
     border-radius: 20px;
     font-size: 16px;
     font-weight: 400;
-
 }
-#Blogs .aside  .NewProducts .buttons button:nth-child(1){
+.Products2{
+    display: none;
+}
+.Products2.active{
+    display: block;
+}
+.Products.active{
+    display: none;
+}
+#Blogs .aside  .NewProducts .buttons button{
     background-color: transparent;
     border: 1px solid #000000;
     color: #000000;
     margin-right: 20px;
 }
-#Blogs .aside  .NewProducts .buttons button:nth-child(2){
-    background-color:#000000;
+#Blogs .aside  .NewProducts .buttons button.active{
+    background-color:#000;
     color: white;
 }
 #Blogs .aside  .NewProducts .Card{
@@ -3330,6 +3533,12 @@ line-height: 27px;
     font-weight: 400;
     color: #212529;
     margin: 6.5px 0;
+    transition: 300ms all;
+}
+
+#Blogs .aside .categories div a:hover{
+    background: #000;
+    color:#fff;
 }
 
 
@@ -3376,8 +3585,158 @@ color: #000000;
 .ta3{
     display: none;
 }
+
+.fixed-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+ display: none;
+    padding: 15px 0;
+    padding-left: 23px;
+    padding-right: 13px;
+}
+
+.fixed-bar .f-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-bar .f-left .fiyat{
+    font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+font-style:normal;
+margin-bottom: 4px;
+color: #9F9F9F;
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+}
+.fixed-bar .f-left .total-f{
+font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #202020;
+}
+
+.fixed-bar button{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+    border: none;
+    background: #E50A19;
+    width: 195px;
+    height: 48px;
+}
+
+.no-btn{
+margin:0 auto;
+}
+
+.no-btn.active{
+    display: none !important;
+}
+
+#Account .AcooungSetiingsContent .mainInfos .birthydayDiv div {
+margin-right: -5px;
+}
+.mobil-top-area{
+    display: none;
+}
+
+.adresbeklemebtn{
+    margin-left:200px;
+}
+
+.adrestime p{
+    margin: 0;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 18px/23px Helvetica Neue;
+letter-spacing: 0px;
+color: #2B2B2B;
+font-weight: 500;
+}
+
+.contentadres .Card{
+    margin-left: 0 !important;
+}
+.adrestime svg{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EFEFEF;
+border-radius: 6px;
+opacity: 1;
+cursor: pointer;
+}
+
+.num-p{
+    margin: 0;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 18px/23px Helvetica Neue;
+letter-spacing: 0px;
+color: #2B2B2B;
+font-weight: 500;
+margin-top: 36px;
+}
+
+.num-p span{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal medium 18px/23px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #838383;
+}
+.adrestime p span{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal medium 18px/23px Helvetica Neue;
+letter-spacing: 0px;
+color: #838383;
+}
+
+.adrestime button{
+    background:transparent;
+    border: none;
+    margin: 0 20px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-23) var(--unnamed-font-family-helvetica-neue);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-2b2b2b);
+text-align: left;
+font: normal normal medium 18px/23px Helvetica Neue;
+letter-spacing: 0px;
+color: #2B2B2B;
+opacity: 1;
+font-weight: 500;
+}
 /* Medias */
+@media(max-width:1400px){
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left:93.8% !important; 
+    }
+}
 @media (max-width:1200px){
+     .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left:92.8% !important; 
+    }
+    .ContentCol{
+        padding-left: 59px;
+
+    }
+    .AccountContent{
+        padding-left: 49px;
+    }
     .accept a{
         width: 100% !important;
     }
@@ -3388,6 +3747,45 @@ color: #000000;
     }
 }
 @media (max-width:992px){
+
+    .OrderAdres .dis{
+        width: 100%;
+    }
+    #Account .SignInContent .MainTitle{
+        display: none;
+    }
+
+    #Account .AcooungSetiingsContent .title h2{
+        display: none;
+    }
+    #Account .MyAdressInfosContent .title h2{
+        display: none;
+    }
+    .socialMedias{
+        display: flex;
+        justify-content: space-between;
+    }
+    .tablet-none{
+        display: none !important;
+    }
+    .swip-area{
+        display: none;
+    }
+    #Account .AddNewAdressContent .title h2{
+        display: none;
+    }
+    
+#Account .AcooungSetiingsContent .mainInfos .birthydayDiv div {
+    margin-right: -5px;
+    }
+     .ContentCol{
+        padding-left: 11px;
+
+    }
+    
+     .AccountContent{
+    padding-left: 0 !important; 
+    }
     #Contact .bgIMG .ta2{
         display: none !important;
     }
@@ -3591,7 +3989,7 @@ display: none;
         text-align: center;
     }
     #Account .BeforeOrdersContent .title h2{
-        text-align: center;
+        display: none;
     }
     #Blogs .aside .socialMedias .socialCard{
         width: auto;
@@ -3673,11 +4071,26 @@ display: none;
     #Reconiliation .contactForm{
         margin-top: 40px;
     }
+    #Account .SignInContent .MainTitle h2{
+        display: none;
+    }
+    #ContactSection.ReconiliationSec .content .Cards .Card h5{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    #ContactSection.ReconiliationSec .content .Cards .Card p{
+        font-size: 16px;
+    }
+    #ContactSection.ReconiliationSec .content h2{
+        font-size: 20px;
+        margin-bottom: 29px;
+    }
 }
 @media(max-width:850px){
     #Account .AccountContent .content ul li a{
         padding: 0 15px;
     }
+ 
 .popup-container{
     width: 95% !important;
 }
@@ -3780,6 +4193,97 @@ margin-top: 28px;
      }
 }
 @media (max-width:600px){
+   .content .disop{
+       width: 100%;
+   }
+    #Account .SignInContent .OtherInfos .inputs > div{
+        margin-top: 10px;
+    }
+    .mobil-top-area{
+        display: block;
+    }
+    .mobil-top-area button{
+    left: 13px;
+   
+}
+    
+    #Blogs .aside .categories div a{
+        margin-left: 0;
+    }
+    #Account .BeforeOrdersContent .content .Card ul li.btnLi{
+        justify-content: space-between;
+        width: 100%;
+    }
+    #Account .BeforeOrdersContent .content .Card ul li .infoOrder{
+        margin-left:0;
+    }
+    #Artboard .RemittanceInformation .CreditCard .infosDiv button{
+        margin-top: 10px;
+    }
+    .Popup .popup-container form input, select{
+        height: 60px;
+    }
+    .Popup .popup-container{
+        border-radius: 1px;
+    }
+    .Popup .popup-container form input, select{
+        border-radius: 1px;
+    }
+    .Popup .popup-container form{
+        width: 97%;
+    }
+    .popup-container{
+        width: 100% !important;
+    }
+    #Account .AcooungSetiingsContent .mainInfos .birthydayDiv div {
+        margin-right: 0px;
+        }
+   
+    
+    
+   
+    #Account .AccountContent .content ul li a .svg1{
+        width: 33px;
+        height: 37px;
+        transform: translateX(-49px);
+    }
+    #Account .AccountContent .content ul li a .svg2{
+        width: 29px;
+        height: 33px;
+        transform: translateX(-36px);
+    }
+     #Account .AccountContent .content ul li a .svg3{
+         width: 28px;
+         height: 39px;
+           transform: translateX(-54px);
+     }
+     #Account .AccountContent .content ul li a .svg4{
+        width:33px;
+height:30px ;
+transform: translateX(-77px);
+
+     }
+       #Account .AccountContent .content ul li a .svg5{
+           width: 26px;
+           height: 34px;
+           transform: translateX(-65px);
+       }
+          #Account .AccountContent .content ul li a .svg6{
+           width: 28px;
+           height: 28px;
+           transform: translateX(-84px);
+       }
+       #Account .AccountContent .content ul li a{
+           padding-left: 27px;
+       }
+    .fixed-bar{
+           display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .OrderSummaryCol .content{
+        transform: translateY(-23px) !important;
+    }
     #Contact .ContactCol{
         margin-top: 0;
     }
@@ -3837,8 +4341,9 @@ margin-top: 28px;
         width: 100% ;
     }
     .socialMedias{
-        display: grid;
-    place-content: center;
+        margin: 0 auto;
+        display: grid !important;
+    place-content: center !important;
         grid-template-columns: repeat(2,1fr);
     }
     #BlogInfo .title h4{
@@ -3901,11 +4406,11 @@ line-height: 27px;
     }
     #Account .AccountContent .content ul li a{
         display: flex;
-        justify-content: start;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
     }
-     #Account .AccountContent .content ul li a span{
-         margin: 0 auto;
-     }
+    
      #Account .AccountContent .content ul li a svg{
          margin-right: 0;
      }
@@ -3920,7 +4425,7 @@ line-height: 27px;
         margin-top: 10px;
     }
       #Artboard .RemittanceInformation .CreditCard .infosDiv div p{
-          white-space: nowrap;
+          white-space: normal;
       }
     #Artboard .RemittanceInformation .CreditCard .infosDiv div p input{
         width: 286px;
@@ -4114,3 +4619,79 @@ line-height: 27px;
         height: 230px;
     }
 }
+
+@media(max-width:375px){
+      .Popup .close-Btn{
+        right: 5px;
+        top:15px;
+    }
+    .Popup .close-Btn svg{
+        width: 35px;
+        height: 35px;
+    }
+    .Popup .popup-container{
+        height: 500px;
+        overflow: auto;
+        border-radius: 1px;
+    }
+        .DeliveryInformationCol .adresses .col-lg-6.addNewAdressCol .content{
+            width: 100%;
+        }
+        .DeliveryInformationCol .content .buttons a{
+            font-size: 14px !important;
+        }
+}
+
+@media(max-width:330px){
+    #Account .AccountContent .content ul li a:hover svg{
+        margin-right: 5px;
+    }
+     #Account .AccountContent .content ul li a .svg1{
+        width: 33px;
+        height: 37px;
+        transform: translateX(-39px);
+    }
+    #Account .AccountContent .content ul li a .svg2{
+        width: 29px;
+        height: 33px;
+        transform: translateX(-26px);
+    }
+     #Account .AccountContent .content ul li a .svg3{
+         width: 28px;
+         height: 39px;
+           transform: translateX(-44px);
+     }
+     #Account .AccountContent .content ul li a .svg4{
+        width:33px;
+height:30px ;
+transform: translateX(-65px);
+
+     }
+       #Account .AccountContent .content ul li a .svg5{
+           width: 26px;
+           height: 34px;
+           transform: translateX(-55px);
+       }
+          #Account .AccountContent .content ul li a .svg6{
+           width: 28px;
+           height: 28px;
+           transform: translateX(-74px);
+       }
+    .copyOrderCode{
+        width: 100% !important;
+    }
+    #Artboard .col-12 .content .ContinueShopping{
+        width: 100%;
+    }
+}
+
+@media(max-width:321px){
+    .fixed-bar button{
+        width: 145px;
+    }
+    #Artboard .RemittanceInformation .CreditCard .infosDiv div p.scro{
+        overflow: scroll;
+        padding-right: 10px;
+    }
+}
+

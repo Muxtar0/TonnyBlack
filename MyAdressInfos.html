@@ -17,7 +17,16 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="NoScrool">
+
+    <section class="mobil-top-area">
+        <div class="container">
+            <button class="svg-left">
+                <img src="./assets/image/Path 3662.png" alt="">
+            </button>
+            <h3> Adres Bilgilerim</h3>
+        </div>
+    </section>
     <!-- Account start -->
     <section id="Account">
         <div class="container">
@@ -353,17 +362,20 @@ function phoneMask (phone) {
      utilsScript:
        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
    });
-   
+     const NoScrool = document.querySelector('.NoScrool');
       const opPop = document.querySelector('.opPop');
         const pop = document.querySelector('.Popup');
         const popClose = document.querySelector('.close-Btn')
 
         opPop.addEventListener('click', function(){
             pop.classList.add('active');
+            NoScrool.classList.add('active')
         })
 
         popClose.addEventListener('click', function(){
             pop.classList.remove('active');
+            NoScrool.classList.remove('active')
+
         })
   </script>
 </body>
