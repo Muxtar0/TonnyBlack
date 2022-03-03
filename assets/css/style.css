@@ -4193,9 +4193,9 @@ margin-top: 28px;
      }
 }
 @media (max-width:600px){
-   .content .disop{
-       width: 100%;
-   }
+    .OrderSummaryCol .content{
+        width: 100% !important;
+    }
     #Account .SignInContent .OtherInfos .inputs > div{
         margin-top: 10px;
     }
